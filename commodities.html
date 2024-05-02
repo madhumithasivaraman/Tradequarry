@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Example</title>
+    <style>
+       .box {
+    width: 90%; /* Adjust this width */
+    margin-right: 20px;
+    margin-left: 60px;
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    height: 280px; /* Adjust the height */
+    margin-top: 50px;
+}
+
+.box-image-container {
+    width: 30%; /* Adjust the width */
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.box-image {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position absolute for placing in top-right corner */
+    bottom: 20;
+    top: 10;
+    max-width: 100%; /* Set maximum width to ensure it fits in the container */
+}
+
+.box-content {
+    padding: 20px;
+    text-align: justify;
+    flex: 1; /* Allow the content to expand */
+}
+
+.box-heading {
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.box-subheading {
+    margin-top: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    flex: 1; /* Allow text to grow to fill remaining space */
+}
+
+.box-heading a {
+    color: white;
+     margin-left: 40px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+}
+
+.box-subheading a {
+    color: white;
+    margin-bottom: 30px;
+   
+    font-family: calibri, sans-serif;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+ body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background: black;
+    padding: -2px 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+.logo {
+    padding-right: 30px; /* Add margin between logo and menu */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 40px; /* Adjust the margin between menu items */
+}
+
+.menu > li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.menu > li > a {
+    background: black;
+    color: #fff;
+    display: block;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu ul {
+    background: black;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+     width: 200px; /* Change the width of the extended box */
+    border-radius:5px ;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li:hover a {
+    background-color: #C19A6B;
+}
+
+.explanation h1{
+color: black;
+     margin-left: 0px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+
+}
+
+
+.explanation {
+color: black;
+ margin-left: 60px;
+ text-decoration: none;
+    font-size: 18px;
+    font-family: calibri, sans-serif;
+    text-align: justify;
+    margin-right: 80px;
+
+}
+
+
+.explanation img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 900px;
+            height: 600px;
+            margin-left: 120px;
+            border-radius: 15px;
+        }
+
+.explanation a{
+    color: #8F6839;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.explanation h4{
+    font-weight: normal;
+}
+
+.bullet {
+    color: black ;
+}
+
+  </style>
+
+</head>
+
+
+
+<header>
+    <div class="logo">
+        <img src="your_logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Markets to trade</a>
+                <ul>
+                    <li><a href="allmarkets.html"><b>All Market guides</b></a></li>
+                      <li>  <a href="stock.html">Shares Trading</a></li>
+                       <li> <a href="commodities.html">Commodities</a></li>
+                       <li> <a href="forex.html">Forex Trading</a></li>
+                       <li> <a href="crypto.html">Cryptocurrency</a></li>
+                       <li> <a href="indices.html">Indices</a></li>
+                      
+                       
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basics of Trading</a>
+                <ul>
+                    <li><a href="box2.html"><b>Trading Charts</b></a></li>
+                    <li><a href="moutain.html">Mountain Chart</a></li>
+        <li><a href="line.html">Line Chart</a></li>
+       <li> <a href="bar.html">Bar Chart</a></li>
+        <li><a href="candle.html">Candlestick Chart</a></li>
+        <li><a href="fandp.html">Pointer and Figure Charts</a></li>
+        <li><a href="basics.html">Trading Tips</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Best Apps</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+</head>
+</body>
+<body>
+    <div class="box">
+        <div class="box-content">
+            <div class="box-heading"><a ><b>Commodities </b></a></div>
+            <div class="box-subheading"><a >  A commodity market involves buying, selling, or trading raw products like oil, gold, or coffee. There are hard commodities, which are generally natural resources, and soft commodities, which are livestock or agricultural goods.</a></div>
+             
+        </div>
+        <div class="box-image-container">
+            <img src="C:\Users\LENOVO\Pictures\commodity-market-c13b0044c1da45dea230710a5c993bc6.jpg" class="box-image" alt="Example Image">
+        </div>
+
+    </div>
+    </body>
+      <div class="explanation">
+           <h1>How Commodity Trading Works</h1>
+           <h4>The last decade has witnessed a boom in commodity trading. The ease of this form of trading has also improved by leaps and bounds. Investors are not only viewing commodities as hedging instruments but also as a tool to assist in diversification. Let’s understand commodities, their trading, and the boons and banes.<br><br>
+</h4>
+
+
+<h1>Trading in Commodities</h1>
+
+ 
+
+
+<h4>Commodities refer to movable goods that we use daily, ranging from grains, cotton, fuel, sugar to metal such as gold, copper, zinc, etc. Commodities are raw material inputs that are used to prepare a variety of finished goods. Therefore, commodities are tangible goods, or physical goods, which can be purchased and traded. They can be broadly classified into the following types:<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span><b>Agriculture:</b> grains, copper, sugar, palm oil, rubber, etc.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span><b>Metals:</b> copper, zinc, iron, brass, lead, etc.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span><b>Bullion:</b> gold, silver, and platinum.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span><b>Energy:</b> crude oil, natural gas, uranium, etc.<br><br>
+Commodity prices are a function of demand and supply. The demand for a commodity is directly proportional to its price and the supply of a commodity is inversely proportional to its price. The pricing of a commodity is also fluctuates based on government policies, geopolitical tensions, global economy, factors of productions, etc.<br><br>
+
+Commodity prices are a function of demand and supply. The demand for a commodity is directly proportional to its price and the supply of a commodity is inversely proportional to its price. The pricing of a commodity is also fluctuates based on government policies, geopolitical tensions, global economy, factors of productions, etc.<br><br>
+
+For instance, reduced rainfall in the country may affect the supply of cotton and increase the global price of cotton in that year. Similarly, the advent of electrical vehicles may have an impact on the demand for fuel and result in a price reduction.<br><br>
+
+Commodity trading involves different types of contracts that derive their value from the underlying commodity. In India, commodity contracts include spot, futures, and options contracts.<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span>In spot contracts, trading and settlement of commodities in instant.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span>Commodity futures are traded at a standardized future price. The buyer of a futures contract has the right and the obligation to buy the commodity at a predetermined rate in the future and the seller must sell the commodity at such prices.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span>In an options contract, the buyer has the right but not the obligation to buy the commodity at a predetermined future price.<br><br>
+Unlike shares and securities, commodity contracts involve delivery at the end of the contract, which may be a delivery or cash settlement. Delivery refers to the actual transfer of the physical goods on termination of the contract. Cash settlement involves the settlement of the differential price in the expectation of the contracting parties. Cash settlements are more commonly preferred over delivery.<br><br>
+
+In India, commodity trading takes place on the MCX Exchange. To trade on MCX, a commodity trading account with an MCX broker is required. The broker will assist you in making the right decisions in your trade. Additionally, the commodity trading account must be linked to the Demat account of the trader. Most contracts entered into by commodities traders are commodity futures that are settled in cash.<br><br></h4>
+
+<h1>Advantages of Commodity Trading</h1>
+
+<h4>There are thousands of cryptocurrencies. Some of the best known include:
+
+Trading in commodities has multiple benefits which include:<br><br>
+
+<b>Diversification:</b> This is the most crucial one. The returns in commodity markets are inversely proportional to equity and debt markets as an increase in commodity prices tend to negatively impact the cost of production and the overall business. Hence, investing a certain percentage into the commodity markets may result in mitigating the risks associated with capital markets.<br><br>
+
+<b>Perfect hedging tool:</b> For example, prices of metals such as bullion tend to increase at a higher rate than inflation. Investors can enjoy a rise in the real value of their invested corpus. Thus, the commodity trade acts as an inflation hedge. Alternatively, enterprises can fix the price of raw materials by transacting in the corresponding commodity contracts. For example, a cloth manufacturer can freeze the price of cotton and eliminate the risk associated with rising cotton prices. As a result, cash flow management and financial planning improve.<br><br>
+
+<b>Low margin:</b> Commodity trading has a lower margin as compared to stocks and bond markets. Essentially, the trader has access to borrowed capital and can increase his exposure to commodities. In cases of cash settlement, the differential price is settled, and traders earn higher returns.<br><br>
+
+Commodity markets are subject to higher volatility since any change in the demand, production capacity or social conditions will directly impact the price of a commodity. Owing to the volatility, the risk and reward are relatively higher.</h4><br><br>
+
+
+
+</div>
+</html>

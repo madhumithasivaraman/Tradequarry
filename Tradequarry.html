@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <body background="C:\Users\LENOVO\Pictures\trading1.jpg">
+    <style>
+        /* Your CSS styles for the navigation bar */
+ body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background: black;
+    padding: -2px 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+.logo {
+    padding-right: 30px; /* Add margin between logo and menu */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 40px; /* Adjust the margin between menu items */
+}
+
+.menu > li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.menu > li > a {
+    background: black;
+    color: #fff;
+    display: block;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu ul {
+    background: black;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+     width: 200px; /* Change the width of the extended box */
+    border-radius:5px ;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li:hover a {
+    background-color: #C19A6B;
+    visibility: visible;
+}
+}
+
+/* Styles for the content */
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: right;
+    padding: 174.3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+   margin-left: 100px;
+   margin-top: 500px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+     .content-above-image {
+    margin-left: 100px;
+   margin-top: 170px;
+}
+
+.orange {
+    color: #C19A6B;
+    
+}
+
+.small-white {
+    font-size: 23px;
+    color: #C19A6B;
+    
+}
+
+.big-white {
+    padding: 0px;
+    font-size: 23px;
+    color: white;
+   
+}
+
+.white {
+    color: white;
+ 
+}
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Paste your HTML code for the navigation bar here -->
+    <div class="logo">
+        <img src="your_logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Markets to trade</a>
+                <ul>
+                    <li><a href="allmarkets.html"><b>All Market guides</b></a></li>
+                    <li><a href="stock.html">Shares Trading</a></li>
+                    <li><a href="#">Commodities</a></li>
+                    <li><a href="#">Forex Trading</a></li>
+                    <li><a href="#">Cryptocurrency</a></li>
+                    <li><a href="#">Indices Trading</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basics of Trading</a>
+                <ul>
+                    <li><a href="box2.html"><b>Trading Charts</b></a></li>
+                    <li><a href="moutain.html">Mountain Chart</a></li>
+                    <li><a href="line.html">Line Chart</a></li>
+                    <li><a href="bar.html">Bar Chart</a></li>
+                    <li><a href="candle.html">Candlestick Chart</a></li>
+                    <li><a href="fandp.html">Pointer and Figure Charts</a></li>
+                   
+                </ul>
+            </li>
+            
+            <li>
+                <a href="bestapps.html">Best Apps</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="aboutus.html">About Us</a>
+                <ul>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Content above the image -->
+<div class="content">
+    <div class="content-above-image">
+        <h1>
+            <span class="orange">Tradequarry</span>
+            <span class="white">is for traders who
+                <br>like taking <span class="orange">risks</span>
+                <br><span class="small-white">Features</span>
+                <span class="big-white gap-adjust line-connector">|Easy to use|Learn quickly</span>
+            </span>
+            <br>
+        </h1>
+    </div>
+</div>
+
+</body>
+</html>

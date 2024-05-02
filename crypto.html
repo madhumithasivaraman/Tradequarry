@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Example</title>
+    <style>
+       .box {
+    width: 90%; /* Adjust this width */
+    margin-right: 20px;
+    margin-left: 60px;
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    height: 280px; /* Adjust the height */
+    margin-top: 50px;
+}
+
+.box-image-container {
+    width: 30%; /* Adjust the width */
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.box-image {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position absolute for placing in top-right corner */
+    bottom: 20;
+    top: 10;
+    max-width: 100%; /* Set maximum width to ensure it fits in the container */
+}
+
+.box-content {
+    padding: 20px;
+    text-align: justify;
+    flex: 1; /* Allow the content to expand */
+}
+
+.box-heading {
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.box-subheading {
+    margin-top: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    flex: 1; /* Allow text to grow to fill remaining space */
+}
+
+.box-heading a {
+    color: white;
+     margin-left: 40px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+}
+
+.box-subheading a {
+    color: white;
+    margin-bottom: 30px;
+   
+    font-family: calibri, sans-serif;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+ body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background: black;
+    padding: -2px 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+.logo {
+    padding-right: 30px; /* Add margin between logo and menu */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 40px; /* Adjust the margin between menu items */
+}
+
+.menu > li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.menu > li > a {
+    background: black;
+    color: #fff;
+    display: block;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu ul {
+    background: black;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+     width: 200px; /* Change the width of the extended box */
+    border-radius:5px ;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li:hover a {
+    background-color: #C19A6B;
+}
+
+.explanation h1{
+color: black;
+     margin-left: 0px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+
+}
+
+
+.explanation {
+color: black;
+ margin-left: 60px;
+ text-decoration: none;
+    font-size: 18px;
+    font-family: calibri, sans-serif;
+    text-align: justify;
+    margin-right: 80px;
+
+}
+
+
+.explanation img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 900px;
+            height: 600px;
+            margin-left: 120px;
+            border-radius: 15px;
+        }
+
+.explanation a{
+    color: #8F6839;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.explanation h4{
+    font-weight: normal;
+}
+
+.bullet {
+    color: black ;
+}
+
+  </style>
+
+</head>
+
+
+
+<header>
+    <div class="logo">
+        <img src="your_logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Markets to trade</a>
+                <ul>
+                    <li><a href="allmarkets.html"><b>All Market guides</b></a></li>
+                      <li>  <a href="stock.html">Shares Trading</a></li>
+                       <li> <a href="commodities.html">Commodities</a></li>
+                       <li> <a href="forex.html">Forex Trading</a></li>
+                       <li> <a href="crypto.html">Cryptocurrency</a></li>
+                       <li> <a href="indices.html">Indices</a></li>
+                      
+                       
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basics of Trading</a>
+                <ul>
+                    <li><a href="box2.html"><b>Trading Charts</b></a></li>
+                    <li><a href="moutain.html">Mountain Chart</a></li>
+        <li><a href="line.html">Line Chart</a></li>
+       <li> <a href="bar.html">Bar Chart</a></li>
+        <li><a href="candle.html">Candlestick Chart</a></li>
+        <li><a href="fandp.html">Pointer and Figure Charts</a></li>
+        
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Best Apps</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+</head>
+</body>
+<body>
+    <div class="box">
+        <div class="box-content">
+            <div class="box-heading"><a ><b>Cryptocurrency </b></a></div>
+            <div class="box-subheading"><a > A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system.</a></div>
+             
+        </div>
+        <div class="box-image-container">
+            <img src="C:\Users\LENOVO\Downloads\cryptocurrency_image1_1130490519_670x377px_300dpi.jpg" class="box-image" alt="Example Image">
+        </div>
+
+    </div>
+    </body>
+      <div class="explanation">
+           <h1>What is cryptocurrency?</h1>
+           <h4>Cryptocurrency is a form of digital currency that operates independently of traditional banking systems. Instead of physical coins or bills, it uses digital entries in a decentralized online database to facilitate transactions between users directly. This digital money is stored in virtual wallets and transactions are recorded in a public ledger.<br><br>
+
+The term "cryptocurrency" comes from the use of encryption techniques to secure transactions and control the creation of new units. Essentially, it's a system of secure digital exchange that doesn't require intermediaries like banks.<br><br>
+
+Bitcoin, created in 2009, was the first cryptocurrency and remains the most well-known. Many people are drawn to cryptocurrencies for investment purposes, as their values can fluctuate dramatically due to speculation and market demand.<br><br>
+           
+While a lot of foreign exchange is done for practical purposes, the vast majority of currency conversion is undertaken by forex traders to earn a profit. The amount of currency converted every day can make price movements of some currencies extremely volatile – which is something to be aware of before you start forex trading.<br><br></h4>
+
+
+<h1>How does cryptocurrency work?</h1>
+
+ 
+
+
+<h4>Cryptocurrencies operate on a decentralized digital ledger called blockchain, which records all transactions and is maintained by currency users themselves.<br><br>
+
+New units of cryptocurrency are created through mining, a process that involves solving complex mathematical problems using computer power. Alternatively, users can purchase cryptocurrencies from brokers and manage them using cryptographic wallets.<br><br>
+
+When you own cryptocurrency, you possess a digital key that enables you to transfer ownership of a virtual unit from one person to another without the need for a trusted intermediary.<br><br>
+
+Despite Bitcoin's inception in 2009, cryptocurrencies and blockchain applications are still evolving in the financial landscape, with potential future applications including the trading of bonds, stocks, and other financial assets using this technology.</h4><br>
+
+
+<h1>Cryptocurrency examples</h1>
+
+<h4>There are thousands of cryptocurrencies. Some of the best known include:</h4>
+
+<h2>Bitcoin:</h2>
+
+<h4>Founded in 2009, Bitcoin was the first cryptocurrency and is still the most commonly traded. The currency was developed by Satoshi Nakamoto – widely believed to be a pseudonym for an individual or group of people whose precise identity remains unknown.</h4>
+
+<h2>Ethereum:</h2>
+
+<h4>Developed in 2015, Ethereum is a blockchain platform with its own cryptocurrency, called Ether (ETH) or Ethereum. It is the most popular cryptocurrency after Bitcoin.</h4>
+
+<h2>Litecoin:</h2>
+
+<h4>This currency is most similar to bitcoin but has moved more quickly to develop new innovations, including faster payments and processes to allow more transactions.</h4>
+
+<h2>Ripple:</h2>
+
+<h4>Ripple is a distributed ledger system that was founded in 2012. Ripple can be used to track different kinds of transactions, not just cryptocurrency. The company behind it has worked with various banks and financial institutions.
+
+Non-Bitcoin cryptocurrencies are collectively known as “altcoins” to distinguish them from the original.</h4><br>
+
+
+
+
+<h1><b>How to buy cryptocurrency</h1>
+
+<h4>You may be wondering how to buy cryptocurrency safely. There are typically three steps involved. These are:</h4>
+
+<h2><b>Step 1:</b> Choosing a platform<br></h2>
+
+<h4>The first step is deciding which platform to use. Generally, you can choose between a traditional broker or dedicated cryptocurrency exchange:<br><br>
+
+<b>Traditional brokers.</b> These are online brokers who offer ways to buy and sell cryptocurrency, as well as other financial assets like stocks, bonds, and ETFs. These platforms tend to offer lower trading costs but fewer crypto features.
+<br><br><b>Cryptocurrency exchanges.</b> There are many cryptocurrency exchanges to choose from, each offering different cryptocurrencies, wallet storage, interest-bearing account options, and more. Many exchanges charge asset-based fees.
+When comparing different platforms, consider which cryptocurrencies are on offer, what fees they charge, their security features, storage and withdrawal options, and any educational resources.</h4><br><br>
+
+
+<h2><b>Step 2: Funding your account<br></h2>
+
+    <h4>Once you have chosen your platform, the next step is to fund your account so you can begin trading. Most crypto exchanges allow users to purchase crypto using fiat (i.e., government-issued) currencies such as the US Dollar, the British Pound, or the Euro using their debit or credit cards – although this varies by platform.<br><br>
+
+Crypto purchases with credit cards are considered risky, and some exchanges don't support them. Some credit card companies don't allow crypto transactions either. This is because cryptocurrencies are highly volatile, and it is not advisable to risk going into debt — or potentially paying high credit card transaction fees — for certain assets.<br><br>
+
+Some platforms will also accept ACH transfers and wire transfers. The accepted payment methods and time taken for deposits or withdrawals differ per platform. Equally, the time taken for deposits to clear varies by payment method.<br><br>
+
+An important factor to consider is fees. These include potential deposit and withdrawal transaction fees plus trading fees. Fees will vary by payment method and platform, which is something to research at the outset.</h4>
+
+
+
+<h2><b>Step 3: Placing an order</h2>
+
+    <h4>If you want to invest in cryptocurrencies, you have several options. One way is through online platforms offered by brokers or exchanges. You can buy or sell cryptocurrencies there by selecting the appropriate option, specifying the amount, and confirming the transaction.<br><br>
+
+Alternatively, you can use payment services like PayPal, Cash App, or Venmo to handle your crypto transactions.<br><br>
+
+There are also investment options like Bitcoin trusts, which let you buy shares through regular brokerage accounts, giving you exposure to crypto via the stock market. Bitcoin ETFs and mutual funds are another avenue for investing in Bitcoin specifically.<br><br>
+
+If you prefer a more indirect approach, you can invest in companies that work with blockchain technology, either through stocks or ETFs. These companies support crypto transactions and the underlying blockchain tech.<br><br>
+
+Ultimately, the best choice depends on your investment objectives and your comfort with risk.</h4><br>
+
+<h1><b>How to store cryptocurrency</h1>
+
+ <h4> There are different wallet providers to choose from. The terms “hot wallet” and “cold wallet” are used:<br><br>
+
+<b>Hot wallet storage:</b> "hot wallets" refer to crypto storage that uses online software to protect the private keys to your assets.<br><br>
+<b>Cold wallet storage:</b> Unlike hot wallets, cold wallets (also known as hardware wallets) rely on offline electronic devices to securely store your private keys.
+Typically, cold wallets tend to charge fees, while hot wallets don't.<br><br><br><br>
+
+</h4>
+</html>

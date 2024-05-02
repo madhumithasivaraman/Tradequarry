@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+    body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background: black;
+    padding: -2px 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+.logo {
+    padding-right: 30px; /* Add margin between logo and menu */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 40px; /* Adjust the margin between menu items */
+}
+
+.menu > li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.menu > li > a {
+    background: black;
+    color: #fff;
+    display: block;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu ul {
+    background: black;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+     width: 200px; /* Change the width of the extended box */
+    border-radius:5px ;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li:hover a {
+    background-color: #C19A6B;
+    visibility: visible;
+}
+
+
+
+.black-box {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            border-radius: 20px;
+            width: 1200px;
+            max-width: 90%;
+            height: 250px;
+            margin-top: 60px;
+            margin-left: 50px;
+            margin-bottom: 130px;
+        }
+
+        .content {
+            flex: 1;
+            text-align: left;
+            margin-right: 20px;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+            margin-top: 10px;
+            font-size: 45px;
+        }
+
+        .content p {
+            font-size: 23px;
+            text-align: justify;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .boxes-container {
+            display: flex;
+            font-family: calibri, sans-serif;
+        }
+
+        .box {
+            width: 20%;
+            margin-right: 20px;
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .box-image-container {
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        .box-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            align-self: flex-start;
+            padding: 0px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            white-space: nowrap;
+        }
+
+        .overlay-textttt {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            align-self: flex-start;
+            padding: 0px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            white-space: nowrap;
+        }
+
+        .box-content {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .box-heading {
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .learn-more {
+            display: inline-block;
+            margin-top: 20px;
+            color: blue;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .learn-more:hover {
+            color: darkblue;
+        }
+
+        .text {
+            font-family: calibri, sans-serif;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+    </style>
+</head>
+
+<header>
+    <div class="logo">
+        <img src="your_logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Markets to trade</a>
+                <ul>
+                    <li><a href="allmarkets.html"><b>All Market guides</b></a></li>
+                      <li>  <a href="stock.html">Shares Trading</a></li>
+                       <li> <a href="commodities.html">Commodities</a></li>
+                       <li> <a href="forex.html">Forex Trading</a></li>
+                       <li> <a href="crypto.html">Cryptocurrency</a></li>
+                       <li> <a href="indices.html">Indices</a></li>
+                      
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basics of Trading</a>
+                <ul>
+                    <li><a href="box2.html"><b>Trading Charts</b></a></li>
+                    <li><a href="moutain.html">Mountain Chart</a></li>
+        <li><a href="line.html">Line Chart</a></li>
+       <li> <a href="bar.html">Bar Chart</a></li>
+        <li><a href="candle.html">Candlestick Chart</a></li>
+        <li><a href="fandp.html">Pointer and Figure Charts</a></li>
+        
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Best Apps</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+    <div class="black-box">
+        <div class="content">
+            <h2><b>Market Guides</b></h2>
+            <p>Explore the wide spectrum of financial products available for trading on global exchanges. Our comprehensive guides offer valuable insights into their unique characteristics  and practical strategies for incorporating </p>
+        </div>
+        <div class="image-container">
+            <img src="C:\Users\LENOVO\Downloads\edu.webp" alt="Image">
+        </div>
+    </div>
+
+    <div class="text">
+        <h1>Learn what you can trade</h1>
+    </div>
+    <div class="boxes-container">
+        <div class="box">
+            <div class="box-image-container">
+                <img src="C:\Users\LENOVO\Downloads\stock.webp" class="box-image" alt="Mountain Chart">
+                <div class="overlay-text">
+                    Shares trading
+                </div>
+            </div>
+            <div class="box-content">
+                <p>Shares trading entails buying and selling ownership shares of publicly listed companies to capitalize on price fluctuations, driven by factors like company performance and market sentiment.</p>
+                <a href="stock.html" class="learn-more">Read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image-container">
+                <img src="C:\Users\LENOVO\Downloads\commodities.webp" class="box-image" alt="Commodities Image">
+                <div class="overlay-textttt">
+                    Commodities trading
+                </div>
+            </div>
+            <div class="box-content">
+                <p>Commodities trading entails trading raw materials like gold, oil, or agricultural products, with profits influenced by market demand, geopolitical events, and economic factors. Traders can engage in commodities trading through various instruments like futures contracts, ETFs, or directly on commodity exchanges.</p>
+                <a href="commodities.html" class="learn-more">Read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image-container">
+                <img src="C:\Users\LENOVO\Downloads\forex.webp" class="box-image" alt="Forex Image">
+                <div class="overlay-text">
+                    Forex trading
+                </div>
+            </div>
+            <div class="box-content">
+                <p>Forex trading entails speculating on currency pair price movements in the global foreign exchange market, offering opportunities for profit based on fluctuations driven by various economic and geopolitical factors. It operates 24/5, providing high liquidity and potential for gains or losses.</p>
+                <a href="forex.html" class="learn-more">Read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image-container">
+                <img src="C:\Users\LENOVO\Downloads\crypto.webp" class="box-image" alt="Cryptocurrency Image">
+                <div class="overlay-textttt">
+                    Cryptocurrency trading
+                </div>
+            </div>
+            <div class="box-content">
+                <p>Cryptocurrency trading entails exchanging digital currencies like Bitcoin or Ethereum on online platforms, seeking profit from market price fluctuations amid volatility and regulatory uncertainties.</p>
+                <a href="crypto.html" class="learn-more">Read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image-container">
+                <img src="C:\Users\LENOVO\Downloads\indices.webp" class="box-image" alt="Indices Image">
+                <div class="overlay-text">
+                    Indices trading
+                </div>
+            </div>
+            <div class="box-content">
+                <p>Indices trading involves speculating on the performance of stock market indices such as the S&P 500 or the Dow Jones Industrial Average, allowing investors to diversify their portfolios and capitalize on broad market trends.</p>
+                <a href="indices.html" class="learn-more">Read more</a>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .boxes {
+            width: 95%; /* Adjust this width */
+            margin-right: 20px;
+            background-color: black; /* Set the background color */
+            color: white; /* Set the text color */
+            border-radius: 20px;
+            overflow: hidden; /* Hide overflow content */
+            display: flex;
+            height: 350px; /* Adjust the height */
+            margin-top: 100px; /* Add margin for top space */
+    margin-bottom: 100px; /* Add margin for bottom space */
+            margin-left: 35px;
+           
+        }
+
+        .box-image-containerrrr {
+            width: 30%; /* Adjust the width */
+            float: right; /* Float the image to the right */
+            position: relative; /* Position relative for absolute positioning */
+             margin-bottom: 200px;
+        }
+
+        .box-images {
+            width: 100%;
+            height: auto;
+            position: absolute; /* Position absolute for placing in top-right corner */
+            top: 0;
+            right: 0;
+            max-width: 100%; /* Set maximum width to ensure it fits in the container */
+        }
+
+        .box-contentyyy {
+            padding: 20px;
+            text-align: justify;
+            flex: 1; /* Allow the content to expand */
+        }
+
+        .box-headinged {
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .box-subheadinged{
+             margin-top: 20px;
+             text-align: justify;
+             margin-left: 40px;
+        }
+
+        .box-headinged a{
+
+            color: white;
+            margin-left: 70px;
+           font-size: 40px;
+           font-family: calibri, sans-serif; 
+
+        }
+        .box-subheadinged a {
+            color: white;
+            margin-bottom: 30px;
+            margin-left: 70px;
+             font-family: calibri, sans-serif; 
+            transition: color 0.3s ease;
+        }
+
+        
+        .box-subheadinged a:hover {
+            color: #C19A6B;
+        }
+
+
+        .box-subheading a::after {
+    content: "\2192"; /* Unicode arrow right character */
+    margin-left: 5px; /* Adjust the spacing between the text and arrow */
+}
+
+    </style>
+</head>
+
+</html>
+
+
+
+</body>
+</html>
+
+    <script>
+        function toggleExtendedItems(itemId) {
+            var extendedItems = document.getElementById(itemId + '-extended-items');
+            if (extendedItems.classList.contains('active')) {
+                extendedItems.classList.remove('active');
+            } else {
+                var allExtendedItems = document.querySelectorAll('.extended-items');
+                allExtendedItems.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+                extendedItems.classList.add('active');
+            }
+        }
+    </script>
+
+

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Example</title>
+    <link rel="stylesheet" href="styles.css">
+
+<body>
+    <style>
+   .box {
+    width: 90%; /* Adjust this width */
+    margin-right: 20px;
+    margin-left: 60px;
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    height: 260px; /* Adjust the height */
+    margin-top: 50px;
+}
+
+.box-image-container {
+    width: 30%; /* Adjust the width */
+    position: relative; /* Position relative for absolute positioning */
+    height: 250%;
+}
+
+.box-image {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position absolute for placing in top-right corner */
+    bottom: 20;
+    top: 10;
+    max-width: 100%; /* Set maximum width to ensure it fits in the container */
+}
+
+.box-content {
+    padding: 20px;
+    text-align: justify;
+    flex: 1; /* Allow the content to expand */
+}
+
+.box-heading {
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.box-subheading {
+    margin-top: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    flex: 1; /* Allow text to grow to fill remaining space */
+}
+
+.box-heading a {
+    color: white;
+     margin-left: 40px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+}
+
+.box-subheading a {
+    color: white;
+    margin-bottom: 30px;
+   
+    font-family: calibri, sans-serif;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    text-align: justify;
+}
+.explanation h1{
+color: black;
+     margin-left: 0px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+
+}
+
+
+.explanation {
+color: black;
+ margin-left: 60px;
+ text-decoration: none;
+    font-size: 18px;
+    font-family: calibri, sans-serif;
+    text-align: justify;
+    margin-right: 60px;
+
+}
+
+
+.explanation img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 900px;
+            height: 500px;
+            margin-left: 30px;
+            border-radius: 15px;
+        }
+
+
+
+
+      body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background: black;
+    padding: -2px 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+.logo {
+    padding-right: 30px; /* Add margin between logo and menu */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 40px; /* Adjust the margin between menu items */
+}
+
+.menu > li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.menu > li > a {
+    background: black;
+    color: #fff;
+    display: block;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu ul {
+    background: black;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+     width: 200px; /* Change the width of the extended box */
+    border-radius:5px ;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li:hover a {
+    background-color: #C19A6B;
+}
+
+                                                                                                                                                                                     
+ </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="your_logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Markets to trade</a>
+                <ul>
+                    <li><a href="allmarkets.html"><b>All Market guides</b></a></li>
+                      <li>  <a href="stock.html">Shares Trading</a></li>
+                       <li> <a href="#">Commodities</a></li>
+                       <li> <a href="#">Forex Trading</a></li>
+                       <li> <a href="#">Cryptocurrency</a></li>
+                       <li> <a href="#">Indices Trading</a></li>
+                       
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basics of Trading</a>
+                <ul>
+                    <li><a href="box2.html"><b>Trading Charts</b></a></li>
+                    <li><a href="moutain.html">Mountain Chart</a></li>
+        <li><a href="line.html">Line Chart</a></li>
+       <li> <a href="bar.html">Bar Chart</a></li>
+        <li><a href="candle.html">Candlestick Chart</a></li>
+        <li><a href="fandp.html">Pointer and Figure Charts</a></li>
+        
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Best Apps</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+</head>
+
+</html>
+    </style>
+    </head>
+<body>
+    <div class="box">
+        <div class="box-content">
+            <div class="box-heading"><a ><b>Trading Charts</b></a></div>
+            <div class="box-subheading"><a >Trading charts serve as visual representations of price movements in financial markets, aiding traders in analyzing trends and making informed decisions based on historical data.</a></div>
+             
+        </div>
+        <div class="box-image-container">
+            <img src="C:\Users\LENOVO\Downloads\trading.avif" class="boxximage" alt="Example Image">
+        </div>
+
+    </div>
+    <div class="boxes-container">
+        <div class="bo">
+            <img src="C:\Users\LENOVO\Downloads\mountain chart.jpg" class="boxximage" alt="Mountain Chart">
+            <div class="box-contenttt">
+                <h3>Mountain chart</h3>
+                <p style="text-align: justify;">Mountain charts are visually depict price trends resembling a mountain shape and aiding traders in strategic decision-making.</p>
+                 <a href="moutain.html" class="learn-more">Learn more</a>
+            </div>
+        </div>
+
+        <div class="bo">
+            <img src="C:\Users\LENOVO\Downloads\Binary-Options-line-chart.png"class="boxximage" alt="Image 2">
+            <div class="box-contenttt">
+                <h3>Line chart</h3>
+                <p style="text-align: justify;">A line chart in trading displays the historical price movements of a security over time, showing the trend with a continuous line.</p>
+                 <a href="line.html"class="learn-more">Learn more</a>
+            </div>
+        </div>
+
+        <div class="bo">
+            <img src="C:\Users\LENOVO\Downloads\bar graph.webp" class="boxximage" alt="Image 3">
+            <div class="box-contenttt">
+                <h3>Bar chart</h3>
+                <p style="text-align: justify;">Bar charts in trading offer concise graphical depictions of price fluctuations, enabling rapid assessment of market dynamics and patterns.</p>
+                 <a href="bar.html" class="learn-more">Learn more</a>
+            </div>
+        </div>
+
+        <div class="bo">
+            <img src="C:\Users\LENOVO\Downloads\sell buy.avif" class="boxximage" alt="Image 4">
+            <div class="box-contenttt">
+                <h3>Candlestick chart</h3>
+                <p style="text-align: justify;">Candlestick patterns in trading depict price movements and time frames, providing insights into market sentiment and potential reversals.</p>
+                 <a href="candle.html" class="learn-more">Learn more</a>
+            </div>
+        </div>
+
+         <div class="bo">
+            <img src="C:\Users\LENOVO\Downloads\point-and-figure-fxcm-marketscope.png" class="boxximage" alt="Image 5">
+            <div class="box-contenttt">
+                <h3>Pointer and Figure charts</h3>
+                <p style="text-align: justify;">Focus on price movements, using Xs and Os to represent price changes, providing a simplified view of market trends.</p>
+                 <a href="fandp.html" class="learn-more">Learn more</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+.boxes-container {
+    display: flex;
+    font-family: calibri, sans-serif;
+}
+
+.bo {
+    margin-top: 50px;
+    width: 20%; /* Adjust this width to fit 4 boxes in a row */
+    margin-right: 20px;
+}
+
+.boxximage {
+    width: 100%;
+    height: 40%;
+}
+
+.box-contenttt {
+    padding: 30px;
+    margin-left: -22px;
+}
+
+.box-contenttt h3 {
+    margin-top: 0;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+    color: darkblue;
+}
+
+
+</style>

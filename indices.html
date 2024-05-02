@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Example</title>
+    <style>
+       .box {
+    width: 90%; /* Adjust this width */
+    margin-right: 20px;
+    margin-left: 60px;
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    height: 280px; /* Adjust the height */
+    margin-top: 50px;
+}
+
+.box-image-container {
+    width: 30%; /* Adjust the width */
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.box-image {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position absolute for placing in top-right corner */
+    bottom: 20;
+    top: 10;
+    max-width: 100%; /* Set maximum width to ensure it fits in the container */
+}
+
+.box-content {
+    padding: 20px;
+    text-align: justify;
+    flex: 1; /* Allow the content to expand */
+}
+
+.box-heading {
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.box-subheading {
+    margin-top: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    flex: 1; /* Allow text to grow to fill remaining space */
+}
+
+.box-heading a {
+    color: white;
+     margin-left: 40px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+}
+
+.box-subheading a {
+    color: white;
+    margin-bottom: 30px;
+   
+    font-family: calibri, sans-serif;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+ body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background: black;
+    padding: -2px 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+.logo {
+    padding-right: 30px; /* Add margin between logo and menu */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 40px; /* Adjust the margin between menu items */
+}
+
+.menu > li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.menu > li > a {
+    background: black;
+    color: #fff;
+    display: block;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu ul {
+    background: black;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+     width: 200px; /* Change the width of the extended box */
+    border-radius:5px ;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li:hover a {
+    background-color: #C19A6B;
+}
+
+.explanation h1{
+color: black;
+     margin-left: 0px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+
+}
+
+
+.explanation {
+color: black;
+ margin-left: 60px;
+ text-decoration: none;
+    font-size: 18px;
+    font-family: calibri, sans-serif;
+    text-align: justify;
+    margin-right: 80px;
+
+}
+
+
+.explanation img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 900px;
+            height: 600px;
+            margin-left: 120px;
+            border-radius: 15px;
+        }
+
+.explanation a{
+    color: #8F6839;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.explanation h4{
+    font-weight: normal;
+}
+
+.bullet {
+    color: black ;
+}
+
+  </style>
+
+</head>
+
+
+
+<header>
+    <div class="logo">
+        <img src="your_logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Markets to trade</a>
+                <ul>
+                   <li><a href="allmarkets.html"><b>All Market guides</b></a></li>
+                      <li>  <a href="stock.html">Shares Trading</a></li>
+                       <li> <a href="commodities.html">Commodities</a></li>
+                       <li> <a href="forex.html">Forex Trading</a></li>
+                       <li> <a href="crypto.html">Cryptocurrency</a></li>
+                       <li> <a href="indices.html">Indices</a></li>
+                      
+                       
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basics of Trading</a>
+                <ul>
+                    <li><a href="box2.html"><b>Trading Charts</b></a></li>
+                    <li><a href="moutain.html">Mountain Chart</a></li>
+        <li><a href="line.html">Line Chart</a></li>
+       <li> <a href="bar.html">Bar Chart</a></li>
+        <li><a href="candle.html">Candlestick Chart</a></li>
+        <li><a href="fandp.html">Pointer and Figure Charts</a></li>
+        
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Best Apps</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+</head>
+</body>
+<body>
+    <div class="box">
+        <div class="box-content">
+            <div class="box-heading"><a ><b>Indices </b></a></div>
+            <div class="box-subheading"><a > Indices are financial instruments designed to track the overall price performance of a basket of stocks. An index uses a statistical measure of change to reflect the overall performance of the defined stocks effectively.</a></div>
+             
+        </div>
+        <div class="box-image-container">
+            <img src="C:\Users\LENOVO\Pictures\stock-market-graph-trading-analysis-260nw-2231197849.jpg" class="box-image" alt="Example Image">
+        </div>
+
+    </div>
+    </body>
+      <div class="explanation">
+           <h1>What are Indices?</h1>
+           <h4>Indices can be excellent for trading, as they offer exposure to broad market movements and built-in diversification to reduce the risks.<br><br>
+
+            For instance, the US S&P 500 is an extremely well-known and popular index. It is designed to track the performance of 500 of the largest publicly listed companies in US stock exchanges. If the price of the S&P 500 rises, it clearly indicates that the overall stock market is bullish (experiencing an upward trend) while a falling price indicates that the market is generally bearish (experiencing a downward trend).<br><br>
+
+Indices act as benchmarks of stock market performance in different regions, sectors, or any relevant niche depending on their composition. They are loved by traders who desire simplicity in taking an overall position in the markets without the need to manage many individual positions.<br><br>
+
+For example, if you are bullish (optimistic) about the UK market, you can simply buy one of the major UK indices, such as the FTSE 100. In addition to simplicity, indices also have other benefits such as:<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span>Efficient diversification<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span>Broad market exposure<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span>Smooth price action<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bullet">&#8226;</span>High liquidity<br><br>
+<br><br></h4>
+
+
+<h1>How Are Indices Compiled?</h1>
+
+ 
+<h4>
+An index is defined by its components or, rather, the stocks it is composed of. Indices can be broad-based and contain a wide range of stocks in an industry, or they can be specific to a defined niche. The different types of indices include:<br><br>
+
+<h2>Global Indices</h2><br>
+Global stock market indices are composed of stocks from across the globe. An example is the Dow Jones Global Titans 50, which tracks 50 of the largest and most widely traded stocks on the NYSE, ASE, Nasdaq, Euronext, LSE, and Tokyo Stock Exchange. <br><br>
+
+<h2>Regional Indices</h2><br>
+Regional indices are composed of stocks from a specific region, such as South America, Europe, or Asia. An example is the Euro STOXX 50, which measures the performance of 50 stocks across 11 countries in the Eurozone.<br><br>
+
+<h2>National Indices</h2><br>
+National indices are made up of stocks within a single country. An example is the ASX100, which covers the overall performance of 100 of the largest stocks listed in Australia.<br><br>
+
+<h2>Sector Indices</h2><br>
+
+
+
+<img src="C:\Users\LENOVO\Downloads\Sector-Indices.png"
+            alt="Bar Chart Image"><br><br>
+
+
+
+            These indices track the performance of selected stocks in a specific industry or sector. Some of the major sectors include: Energy, Technology, Financials, Industrials, Healthcare<br><br>
+
+Sectors can be as broad as healthcare or as niche as biotechnology. An example is the Global Cannabis Giants Index (BGCANG Index), which was developed to track the stock performance of the top 20 listed companies exposed to the cannabis industry.
+</h4><br><br>
+
+
+
+
+<h1><b>Most Traded Indices</h1>
+
+<h4><img src="C:\Users\LENOVO\Downloads\World-Indices.png"
+            alt="Bar Chart Image"><br><br>
+</h4><br>
+
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Example</title>
+    <style>
+       .box {
+    width: 90%; /* Adjust this width */
+    margin-right: 20px;
+    margin-left: 60px;
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    height: 280px; /* Adjust the height */
+    margin-top: 50px;
+}
+
+.box-image-container {
+    width: 30%; /* Adjust the width */
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.box-image {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position absolute for placing in top-right corner */
+    bottom: 20;
+    top: 10;
+    max-width: 100%; /* Set maximum width to ensure it fits in the container */
+}
+
+.box-content {
+    padding: 20px;
+    text-align: justify;
+    flex: 1; /* Allow the content to expand */
+}
+
+.box-heading {
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.box-subheading {
+    margin-top: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    flex: 1; /* Allow text to grow to fill remaining space */
+}
+
+.box-heading a {
+    color: white;
+     margin-left: 40px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+}
+
+.box-subheading a {
+    color: white;
+    margin-bottom: 30px;
+   
+    font-family: calibri, sans-serif;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+ body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background: black;
+    padding: -2px 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+.logo {
+    padding-right: 30px; /* Add margin between logo and menu */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 40px; /* Adjust the margin between menu items */
+}
+
+.menu > li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.menu > li > a {
+    background: black;
+    color: #fff;
+    display: block;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu ul {
+    background: black;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+     width: 200px; /* Change the width of the extended box */
+    border-radius:5px ;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li:hover a {
+    background-color: #C19A6B;
+}
+
+.explanation h1{
+color: black;
+     margin-left: 0px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+
+}
+
+
+.explanation {
+color: black;
+ margin-left: 60px;
+ text-decoration: none;
+    font-size: 18px;
+    font-family: calibri, sans-serif;
+    text-align: justify;
+    margin-right: 80px;
+
+}
+
+
+.explanation img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 900px;
+            height: 600px;
+            margin-left: 120px;
+            border-radius: 15px;
+        }
+
+.explanation a{
+    color: #8F6839;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.explanation h4{
+    font-weight: normal;
+}
+
+.bullet {
+    color: black ;
+}
+
+  </style>
+
+</head>
+
+
+
+<header>
+    <div class="logo">
+        <img src="your_logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Markets to trade</a>
+                <ul>
+                   <li><a href="allmarkets.html"><b>All Market guides</b></a></li>
+                      <li>  <a href="stock.html">Shares Trading</a></li>
+                       <li> <a href="commodities.html">Commodities</a></li>
+                       <li> <a href="forex.html">Forex Trading</a></li>
+                       <li> <a href="crypto.html">Cryptocurrency</a></li>
+                       <li> <a href="indices.html">Indices</a></li>
+                      
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basics of Trading</a>
+                <ul>
+                    <li><a href="box2.html"><b>Trading Charts</b></a></li>
+                    <li><a href="moutain.html">Mountain Chart</a></li>
+        <li><a href="line.html">Line Chart</a></li>
+       <li> <a href="bar.html">Bar Chart</a></li>
+        <li><a href="candle.html">Candlestick Chart</a></li>
+        <li><a href="fandp.html">Pointer and Figure Charts</a></li>
+        
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Best Apps</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+</head>
+</body>
+<body>
+    <div class="box">
+        <div class="box-content">
+            <div class="box-heading"><a ><b>Forex Trading</b></a></div>
+            <div class="box-subheading"><a >Forex trading, or FX trading, involves converting one currency into another. It's a highly active market, with daily transactions totaling around $6.6 trillion, executed by individuals, companies, and banks.</a></div>
+             
+        </div>
+        <div class="box-image-container">
+            <img src="C:\Users\LENOVO\Downloads\download.jpeg" class="box-image" alt="Example Image">
+        </div>
+
+    </div>
+    </body>
+      <div class="explanation">
+           <h1>What is Forex Trading?</h1>
+           Forex trading, or FX trading, is the exchange of one currency for another. It's a highly active market, with individuals, companies, and banks conducting approximately $6.6 trillion in transactions daily. This global market, also referred to as foreign exchange, plays a pivotal role in international finance.<br><br>
+
+           <img src="C:\Users\LENOVO\Pictures\original-size.jpg"
+            alt="Bar Chart Image"><br> 
+
+While a lot of foreign exchange is done for practical purposes, the vast majority of currency conversion is undertaken by forex traders to earn a profit. The amount of currency converted every day can make price movements of some currencies extremely volatile – which is something to be aware of before you start forex trading.<br><br>
+
+
+<h1>Introduction to forex: master currency trading with these 5 steps</h1>
+
+ <a href="#Essential forex trading basics for novices">Essential forex trading basics for novices</a><br><br>
+            <a href="#How does forex trading work?">How does forex trading work?</a><br><br>
+            <a href="#What motivates individuals to engage in forex trading?">What motivates individuals to engage in forex trading?</a><br><br>
+            <a href="#Learn how currency markets work">Learn how currency markets work</h1><br><br>
+
+            <a href="#Steps to becoming a proficient forex trader">Steps to becoming a proficient forex trader</a><br><br>
+
+
+<h1 class="explanation " id="Essential forex trading basics for novices"><b>Essential forex trading basics for novices</h1><br>
+
+<h2>What is a forex pair?</h2>
+
+<h4>A forex pair is a combination of two currencies that are traded against each other. There are hundreds of different combinations to choose from, but some of the most popular include the euro against the US dollar (EUR/USD), the US dollar against the Japanese yen (USD/JPY) and the British pound against the US dollar (GBP/USD).</h4><br><br>
+
+
+        <img src="C:\Users\LENOVO\Pictures\original-size (1).jpg"
+            alt="Bar Chart Image">
+
+
+<h2>What are the base and quote currencies?</h2>
+
+<h4>The base currency is always on the left of a currency pair, and the quote is always on the right. The base currency is always equal to one, and the quote currency is equal to the current quote price of the pair – which shows how many of the quote currency it’ll cost to buy one of the base. So, when you’re trading currency, you’re always selling one to buy another.</h4><br><br>
+
+<img src="C:\Users\LENOVO\Pictures\original-size (2).jpg"
+            alt="Bar Chart Image">
+
+
+<h1 class="explanation " id="How does forex trading work?"><b>How does forex trading work?</h1><br>
+
+<h4>Forex trading is like swapping money for different money. When you see a currency pair like GBP/USD, it tells you how much of one currency you need to buy another. For example, if GBP/USD is 1.5, it means you need 1.5 US dollars to buy 1 British pound.
+
+Each currency has a code, like USD for US dollar and GBP for British pound. These codes help traders know which currency they're dealing with in a pair.</h4><br><br>
+
+<img src="C:\Users\LENOVO\Pictures\original-size (3).jpg"
+            alt="Bar Chart Image">
+
+<h2><span class="bullet">&#8226;</span>&nbsp;Buying and Selling Currency Pairs:</h2><br> <h4>When you buy a currency pair, it means you believe the first currency will become stronger compared to the second currency. For instance, if you buy GBP/USD, you're expecting the British pound to rise in value against the US dollar. On the other hand, selling a currency pair indicates your belief that the first currency will weaken relative to the second one. So, selling GBP/USD suggests you think the British pound will decrease in value compared to the US dollar.</h4><br>
+<h2><span class="bullet">&#8226;</span>&nbsp;Understanding the Spread:</h2><br> <h4>The spread in forex trading is simply the difference between the buying price and the selling price. It's the cost you pay for making a trade. For example, if the buy price for a currency pair is 1.3428 and the sell price is 1.3424, the spread is 0.0004.</h4><br>
+<h2><span class="bullet">&#8226;</span>&nbsp;Margin and Leverage:</h2><br> <h4>Margin is the initial deposit you need to put down to open and maintain a leveraged position. It's like a security deposit. Leverage allows you to control a larger position with a smaller amount of your own money. For instance, if you want to trade $100,000 worth of currency and your broker offers leverage of 200:1, you only need to deposit $500 (which is 0.50% of $100,000) as margin. This means you're borrowing the rest of the money from the broker.</h4><br>
+
+<h1 class="explanation " id="What motivates individuals to engage in forex trading?"><b>What motivates individuals to engage in forex trading?</h1><br>
+    <h4>Traders make a prediction on forex pairs to profit from one currency strengthening or weakening against another. When the price of a pair is rising, it means that the base is strengthening against the quote and when it’s falling, the base is weakening against the quote.<br><br>
+
+That’s because a rising price means that more of the quote are needed to buy a single unit of the base, and a falling price means that fewer of the quote are needed to buy one of the base. So, traders would likely go long if the base is strengthening relative to the quote currency, or short if the base is weakening.<br>
+ 
+ <br>Some of the most popular forex trading styles are scalping, day trading, swing trading and position trading. You might choose a different style depending on whether you have a short- or long-term outlook.</h4>
+
+
+<img src="C:\Users\LENOVO\Pictures\original-size (4).jpg"
+            alt="Bar Chart Image">
+
+<h1 class="explanation " id="Learn how currency markets work"><b>Learn how currency markets work</h1>
+
+    <h4>The forex market is made up of currencies from all over the world, which can make exchange rate predictions difficult as there are many forces that can contribute to price movements. That said, the following factors can all have an effect on the forex market.</h4>
+
+<h2>Central banks</h2>
+<h4>A currency’s supply is controlled by central banks, who can announce measures that will have a significant effect on that currency’s price. Quantitative easing, for example, involves injecting more money into an economy, and can cause a currency’s price to fall in line with an increased supply.</h4>
+
+<h2>News reports</h2>
+<h4>Commercial banks and other investors tend to want to put their capital into economies that have a strong outlook. So, if a positive piece of news hits the markets about a certain region, it will encourage investment and increase demand for that region’s currency. If negative news hits, then demand might be expected to fall. This is why currencies tend to reflect the reported economic health of the region they represent.</h4>
+
+<h2>Market sentiment</h2>
+<h4>Market sentiment, which often reacts to the news, can also play a major role in driving currency prices. If traders believe that a currency is headed in a certain direction, they will trade accordingly and may convince others to follow suit, increasing or decreasing demand.</h4><br>
+
+<h1 class="explanation " id="Steps to becoming a proficient forex trader"><b>Steps to becoming a proficient forex trader</h1>
+
+  <h2>Education and Learning:</h2> <h4>Start by educating yourself about the forex market. Understand the basics of currency pairs, how they are traded, factors influencing exchange rates, and different trading strategies. There are plenty of online resources, courses, and books available to help you learn.</h4>
+<h2>Practice with a Demo Account:</h2> <h4>Before risking real money, practice trading with a demo account provided by forex brokers. This allows you to familiarize yourself with the trading platform, test your strategies, and gain confidence without any financial risk.</h4>
+<h2>Develop a Trading Plan and Stick to It:</h2> <h4>Define your trading goals, risk tolerance, and strategy. Decide on factors like the amount of capital you're willing to risk per trade, entry and exit points, and the timeframe you'll trade in. Consistency and discipline are key to success in forex trading, so stick to your plan and continuously evaluate and refine your approach.</h4>
+</html>

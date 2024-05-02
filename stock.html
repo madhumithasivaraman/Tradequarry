@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Example</title>
+    <style>
+       .bo {
+    width: 90%; /* Adjust this width */
+    margin-right: 20px;
+    margin-left: 60px;
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    height: 280px; /* Adjust the height */
+    margin-top: 50px;
+}
+
+.box-imageeecontainer {
+    width: 30%; /* Adjust the width */
+    height: 300%;
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.boximage {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position absolute for placing in top-right corner */
+    bottom: 20;
+    top: 10;
+    max-width: 100%; /* Set maximum width to ensure it fits in the container */
+}
+
+.boxcontent {
+    padding: 20px;
+    text-align: justify;
+    flex: 1; /* Allow the content to expand */
+}
+
+.boxheading {
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.boxsubheading {
+    margin-top: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    flex: 1; /* Allow text to grow to fill remaining space */
+}
+
+.boxheading a {
+    color: white;
+     margin-left: 40px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+}
+
+.boxsubheading a {
+    color: white;
+    margin-bottom: 30px;
+   
+    font-family: calibri, sans-serif;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    text-align: justify;
+}
+.explanation h1{
+color: black;
+     margin-left: 0px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+
+}
+
+
+.explanation {
+color: black;
+ margin-left: 60px;
+ text-decoration: none;
+    font-size: 18px;
+    font-family: calibri, sans-serif;
+    text-align: justify;
+    margin-right: 60px;
+
+}
+
+
+.explanation img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 900px;
+            height: 500px;
+            margin-left: 30px;
+            border-radius: 15px;
+        }
+ .box {
+    width: 90%; /* Adjust this width */
+    margin-right: 20px;
+    margin-left: 60px;
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    height: 260px; /* Adjust the height */
+    margin-top: 30px;
+}
+
+.box-image-container {
+    width: 30%; /* Adjust the width */
+    position: relative; /* Position relative for absolute positioning */
+    height: 250%;
+}
+
+.box-image {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position absolute for placing in top-right corner */
+    bottom: 20;
+    top: 10;
+    max-width: 100%; /* Set maximum width to ensure it fits in the container */
+}
+
+.box-content {
+    padding: 20px;
+    text-align: justify;
+    flex: 1; /* Allow the content to expand */
+}
+
+.box-heading {
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.box-subheading {
+    margin-top: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    flex: 1; /* Allow text to grow to fill remaining space */
+}
+
+.box-heading a {
+    color: white;
+     margin-left: 40px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+}
+
+.box-subheading a {
+    color: white;
+    margin-bottom: 30px;
+   
+    font-family: calibri, sans-serif;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    text-align: justify;
+}
+.explanation h1{
+color: black;
+     margin-left: 0px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+
+}
+
+
+.explanation {
+color: black;
+ margin-left: 60px;
+ text-decoration: none;
+    font-size: 18px;
+    font-family: calibri, sans-serif;
+    text-align: justify;
+    margin-right: 60px;
+
+}
+
+
+.explanation img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 900px;
+            height: 500px;
+            margin-left: 30px;
+            border-radius: 15px;
+        }
+
+ body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background: black;
+    padding: -2px 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+.logo {
+    padding-right: 30px; /* Add margin between logo and menu */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 40px; /* Adjust the margin between menu items */
+}
+
+.menu > li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+.menu > li > a {
+    background: black;
+    color: #fff;
+    display: block;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.menu ul {
+    background: black;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+     width: 200px; /* Change the width of the extended box */
+    border-radius:5px ;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li:hover a {
+    background-color: #C19A6B;
+}
+
+                                                                                                                                                                                     
+
+
+     
+        /* Add similar styling for other extended items */
+    
+
+        /* Styles for trading charts content */
+        .boxes-container {
+    display: flex;
+    font-family: calibri, sans-serif;
+}
+
+.box {
+    width: 20%; /* Adjust this width to fit 4 boxes in a row */
+    margin-right: 20px;
+}
+
+.box-image {
+    width: 100%;
+    height: 40%;
+}
+
+.box-content {
+    padding: 30px;
+    margin-left: -22px;
+}
+
+.box-content h3 {
+    margin-top: 0;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+    color: darkblue;
+}
+.content-above-image {
+    position: absolute;
+    top: 80%;
+    right: 40%; /* Set right: 0 to align to the right side */
+    transform: translateY(-50%);
+    text-align: left; /* Change text alignment to right */
+    color: white;
+    font-size: 24px;
+}
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: right;
+            padding: 174.3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: left;
+        }
+
+        .content h1 {
+font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 20px;
+        }
+
+        .orange {
+            color: #C19A6B;
+        }
+
+        .small-white {
+            font-size: 23px;
+            color: #C19A6B;
+            
+        }
+
+        .big-white {
+            padding: 0px;
+            font-size: 23px;
+            color: white;
+        }
+
+        .white {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="your_logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Markets to trade</a>
+                <ul>
+                    <li><a href="allmarkets.html"><b>All Market guides</b></a></li>
+                      <li>  <a href="stock.html">Shares Trading</a></li>
+                       <li> <a href="commodities.html">Commodities</a></li>
+                       <li> <a href="forex.html">Forex Trading</a></li>
+                       <li> <a href="crypto.html">Cryptocurrency</a></li>
+                       <li> <a href="indices.html">Indices</a></li>
+                      
+                </ul>
+            </li>
+            <li>
+                <a href="#">Basics of Trading</a>
+                <ul>
+                    <li><a href="box2.html"><b>Trading Charts</b></a></li>
+                    <li><a href="moutain.html">Mountain Chart</a></li>
+        <li><a href="line.html">Line Chart</a></li>
+       <li> <a href="bar.html">Bar Chart</a></li>
+        <li><a href="candle.html">Candlestick Chart</a></li>
+        <li><a href="fandp.html">Pointer and Figure Charts</a></li>
+        
+                </ul>
+            </li>
+           
+            <li>
+                <a href="#">Best Apps</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                   
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+</body>
+</html>
+
+<body>
+    <div class="bo">
+        <div class="boxcontent">
+            <div class="boxheading"><a ><b>Stock or Share Market</b></a></div>
+            <div class="boxsubheading"><a >The stock market is not a place you can visit but refers to the trading (some physical, most online) of shares representing the partial owning of companies. It's not only where businesses raise capital but is used as a sign of the economy's health.</a></div>
+             
+        </div>
+        <div class="box-imageeecontainer">
+            <img src="C:\Users\LENOVO\Downloads\download (2).jpeg" class="box-image" alt="Example Image">
+        </div>
+
+    </div>
+        <div class="explanation">
+           <h1>What is Stock Market?</h1>
+           The price of stocks changes based on supply and demand, the company’s performance, economic conditions, and other factors that might not seem rational—like investor “sentiment”—but all of which must be considered if you’re buying or selling shares.<br><br>
+
+People purchase stocks for a lot of reasons. Some hold onto stocks, looking for income from dividends. Others might think a stock will rise, so they snap it up, trying to buy low and sell high. Still, others might be interested in having a say in how particular companies are run. That’s because you can vote at shareholder meetings based on the number of shares you own.<br><br>
+
+Both “stock market” and “stock exchange” are often used interchangeably, but they’re not the same. Traders in the stock market buy or sell shares on one or more stock exchanges, which are only part of the overall stock market. The major U.S. stock exchanges include the New York Stock Exchange (NYSE) and Nasdaq.<br><br>
+
+<h1>How to Read Stock Charts</h1>
+
+Understanding stock market charts is vital for investors, especially beginners. Successful investing involves two key analyses: fundamental and technical.<br><br> Fundamental analysis assesses a company's financial health and market position. Technical analysis focuses on interpreting stock charts to identify price trends and patterns over time. <br><br>Groww provides advanced chart options, empowering investors to make informed decisions by offering insights into stock price movements and trends. Whether you're new to investing or experienced, our tools support your financial goals.<br><br>
+
+    <img src="C:\Users\LENOVO\Downloads\Basic-stock-chart.jpg"
+            alt="Bar Chart Image"><br> 
+
+
+            As you can see, the basic chart offers a visual view of the performance of the stock price over a selected period, along with the following information and options:<br><br>
+
+1.Total number of shareholders in the company<br><br>
+2.The current stock price<br><br>
+3.The choice of two chart types – Line chart and Candlestick chart<br><br>
+4.The choice between the performance of the share on two stock exchanges – NSE and BSE<br><br>
+5.The period for which you want to see the performance of the stock price – One day (1D)<br><br>
+   <i> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1.One week (1W)<br><br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.One month (1M)<br><br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.One year (1y)<br><br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4.Three years (3Y)<br><br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5.Five years (5Y).<br><br></i>
+ 6.Based on the period selected, the percentage loss/gain<br><br>
+ 7.Advanced chart options<br><br> 
+
+
+     </div>
+
+
+<div class="explanation"><h1>Most popular share CFDs to trade</h1><br><br></div>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: -0px; /* Adjust the margin top to reduce space */
+    margin-left: 500px;
+  }
+  .boxes {
+    position: relative;
+    width: 535px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 0px;
+    background-color: transparent; /* Make the background transparent */
+    margin-right: 600px;
+
+   
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Adjust text color */
+    font-size: 16px; /* Adjust font size */
+  white-space: nowrap; /* Prevent text from wrapping */
+    font-family: calibri, sans-serif;
+  }
+  .left-text {
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  .right-text {
+    right: 10px;
+    transform: translateY(-50%);
+    margin-left: 170px;
+
+  }
+  .blue {
+    background-color: white;
+  }
+  .green {
+    background-color: #DFC79B;
+  }
+
+  .left-text b,.text-overlay b{
+    font-size: 20px;
+
+  }
+  .right-text b{
+    font-size: 20px;
+    margin-left: -35px;
+    
+  }
+
+   .bullet {
+      color: black; /* Color of the bullet */
+      margin-right: 5px; /* Space between bullet and text */
+      font-size: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="boxes blue">
+  <div class="text-overlay left-text"><B>US Stocks</B></div>
+    <div class="text-overlay"><B>UK Stocks</B></div>
+    <div class="text-overlay right-text"><B>European Stocks</B></div>
+    </div>
+  <div class="boxes green">
+    <div class="text-overlay left-text">Alibaba</div>
+    <div class="text-overlay">Aviva</div>
+    <div class="text-overlay right-text">Adidas</div>
+  </div>
+  <div class="boxes blue">
+    <div class="text-overlay left-text">Alphabet</div>
+    <div class="text-overlay">BP</div>
+    <div class="text-overlay right-text">Airbus</div>
+  </div>
+  <div class="boxes green">
+    <div class="text-overlay left-text">Amazon</div>
+    <div class="text-overlay">EasyJet</div>
+    <div class="text-overlay right-text">BASF</div>
+  </div>
+  <div class="boxes blue">
+    <div class="text-overlay left-text">Apple </div>
+    <div class="text-overlay">HSBC</div>
+    <div class="text-overlay right-text">BNP Paribas</div>
+  </div>
+  <div class="boxes green">
+    <div class="text-overlay left-text">Facebook</div>
+    <div class="text-overlay">GlaxoSmithKline</div>
+    <div class="text-overlay right-text">Daimler</div>
+  </div>
+  <div class="boxes blue">
+    <div class="text-overlay left-text">Microsoft</div>
+    <div class="text-overlay">Lloyds</div>
+    <div class="text-overlay right-text">Deutsche Bank</div>
+  </div>
+  <div class="boxes green">
+    <div class="text-overlay left-text">Netflix</div>
+    <div class="text-overlay">Rio Tinto</div>
+    <div class="text-overlay right-text">Kering</div>
+  </div>
+  <div class="boxes blue">
+    <div class="text-overlay left-text">Pfizer</div>
+    <div class="text-overlay">Rolls-Royce Holdings</div>
+    <div class="text-overlay right-text">LVMH</div>
+  </div>
+  <div class="boxes green">
+    <div class="text-overlay left-text">Tesla</div>
+    <div class="text-overlay">Tesco</div>
+    <div class="text-overlay right-text">Sanofi</div>
+  </div>
+  <div class="boxes blue"style="margin-top: 0px;">
+    <div class="text-overlay left-text">Walt Disney Co.</div>
+    <div class="text-overlay">Vodafone</div>
+    <div class="text-overlay right-text">Siemens</div>
+  </div>
+  
+</div>
+
+
+ <div class="explanation" ><h1>How to Invest in Stock Market in India?</h1><br>
+
+  <span class="bullet">&#8226;</span><b>Step 1:</b>Open a DEMAT account and ensure it is linked with a pre-existing bank account to carry out transactions smoothly.<br><br>
+
+<span class="bullet">&#8226;</span><b>Step 2:</b> Sign in to the DEMAT account via the mobile-based application or web platform.<br><br>
+
+<span class="bullet">&#8226;</span><b>Step 3:</b> Pick a Stock that you want to invest in.<br><br>
+
+<span class="bullet">&#8226;</span>
+<b>Step 5:</b> Purchase the stock at its listed price and specify the number of units.<br><br>
+
+<span class="bullet">&#8226;</span><b>Step 6:</b> Once a seller reciprocates that request, your purchase order will get executed. Post-completion of the transaction, your bank account will get debited with the required amount. Simultaneously, you will receive the shares in your DEMAT account.<br><br>
+<b>Note -</b> Individuals must note that there are specific prerequisites when opening a DEMAT Account.<br><br>
+
+<span class="bullet">&#8226;</span>Bank Account<br>
+<span class="bullet">&#8226;</span>Proof of Address<br>
+<span class="bullet">&#8226;</span>Proof of Identity<br>
+<span class="bullet">&#8226;</span>PAN Card<br>
+<span class="bullet">&#8226;</span>Cancelled Cheque<br>
+<span class="bullet">&#8226;</span>A Stockbroker<br><br>
+For individuals who want to learn how to invest money in the share market, it is essential to keep certain factors in mind.<br><br>   
+</body>
+</html>

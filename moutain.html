@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            font-size: 13px;
+            display: flex;
+            align-items: flex-start;
+            font-weight: normal;
+            margin-left: 0px;
+            text-align: justify;
+        }
+  .bo {
+    width: 90%;
+    height: 280px;
+    margin: 50vh auto 0;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+
+.box-imageeecontainer {
+    width: 30%; /* Adjust the width */
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.boximage {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position absolute for placing in top-right corner */
+    bottom: 20;
+    top: 10;
+    max-width: 100%; /* Set maximum width to ensure it fits in the container */
+}
+
+.boxcontent {
+    padding: 20px;
+    text-align: justify;
+    flex: 1; /* Allow the content to expand */
+}
+
+.boxheading {
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.boxsubheading {
+    margin-top: 30px;
+    text-align: justify;
+    margin-left: 40px;
+    flex: 1; /* Allow text to grow to fill remaining space */
+}
+
+.boxheading a {
+    color: white;
+     margin-left: 40px;
+    font-size: 40px;
+    font-family: calibri, sans-serif;
+}
+
+.boxsubheading a {
+    color: white;
+    margin-bottom: 30px;
+   
+    font-family: calibri, sans-serif;
+    transition: color 0.3s ease;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.content {
+    flex: 0 0 70%;
+    margin-top: 380px; /* Adjusted margin-top */
+    margin-left: 30px; /* Adjusted margin-left */
+}
+
+.table-box {
+    flex: 0 0 28%;
+    height: 350px; /* Adjusted height */
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    position: auto; /* Changed position to fixed */
+    top: 0; /* Aligned to the top */
+    right: 0; /* Aligned to the right */
+    overflow-y: auto; /* Added overflow-y to enable vertical scrolling */
+    margin-top: 400px; /* Adjusted margin-top */
+}
+
+
+        .table-box h4 {
+            font-weight: normal;
+            font-family: calibri, sans-serif;
+            margin-left: 20px;
+            margin-top: 20px;
+            color: black;
+            line-height: 2;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .table-box h1 {
+            font-family: calibri, sans-serif;
+            margin-bottom: 30px;
+            border-bottom: 1px solid black;
+            width: 80%;
+            margin-left: 20px;
+            font-size: 25px;
+            text-align: justify;
+        }
+
+        .table-box h4:hover {
+            color: #C19A6B;
+        }
+
+        .content h2 {
+            font-weight: normal;
+            font-family: calibri, sans-serif;
+            font-size: 17px;
+            margin-left: 30px;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            font-family: calibri, sans-serif;
+            margin-left: 30px;
+        }
+
+        .mm h1 {
+            font-size: 5px;
+            font-family: calibri, sans-serif;
+        }
+
+        .content h3 {
+            color: #C19A6B;
+        }
+
+        .content img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 650px;
+            height: 330px;
+            margin-left: 30px;
+            border-radius: 15px;
+        }
+        
+
+
+
+        .colour {
+            color: #C19A6B;
+        }
+
+        .hd h1 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .anchor-offset {
+            margin-top: -50px;
+            padding-top: 50px;
+        }
+
+        /* Styles for the FAQ accordion */
+        .accordion {
+            background-color: #eee;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            margin: 10px 0;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            font-family: calibri, sans-serif;
+
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: white;
+            border: 1px dashed #FFEABB;
+            margin-left: 0px;
+
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+             margin-left: 0px;
+
+        }
+
+        .panel {
+            font-size: 18px;
+            margin-left: 0px;
+        }
+
+        .active:after {
+            content: "\2212";
+            margin-left: 0px;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-left: 0px; /* Adjust this value to move the box to the right */
+
+        }
+    </style>
+</head>
+
+<body>
+<div class="bo">
+        <div class="boxcontent">
+            <div class="boxheading"><a ><b>Stock or Share Market</b></a></div>
+            <div class="boxsubheading"><a >The stock market is not a place you can visit but refers to the trading (some physical, most online) of shares representing the partial owning of companies. It's not only where businesses raise capital but is used as a sign of the economy's health.</a></div>
+             
+        </div>
+        <div class="box-imageeecontainer">
+            <img src="C:\Users\LENOVO\Downloads\download ......for stock market.jpeg" class="box-image" alt="Example Image">
+        </div>
+
+    </div>
+    
+    
+    <div class="content">
+        <!-- Left side content here -->
+        
+        
+        <img src="C:\Users\LENOVO\Downloads\Mountain-chart_0 (1).jpg"
+            alt="Bar Chart Image">
+        <h1 class="hd" id="what-is-mountain-chart"><b>What is Mountain Chart?</b></h1>
+        <h2 class="ss"><p>A mountain chart, also known as an area chart or a peak and trough chart, is a type of financial chart or graph used to represent data over time. It visually displays the fluctuations in data values by showing peaks and dips, resembling the contour of a mountain.<br><br>Mountain charts are essentially the same as line charts, but with the space below the line filled in with colour. People also often refer to them as area charts.</p></h2>
+        <h1 class="hd" id="where have you"><b>Where have you heard about mountain charts?</b><br></h1>
+        <h2 class="ss">
+                <p>You may have seen a mountain chart if you've read a fund prospectus or report. Like other types of charts, mountain charts are there to help you digest a wealth of financial or market information in a quick and appealing way. Corporate reports often feature them because their bold bright colours stand out and can tell an upbeat story.<br><br><br>
+                Financial newspapers such as the Financial Times also often use mountain charts to accompany their analysis pieces. Again, the idea is to distil turgid figures and turn them into an easily understood narrative.</p>
+               <img src="C:\Users\LENOVO\Downloads\where-have-you-heard mountain chart.png"
+            alt="Bar Chart Image">  
+
+
+
+
+Mountain charts have several key uses. Firstly, they can depict the growth of an investment over time - they are a common way to showcase a fund's past performance. Here’s an example that shows both the overall trend and the depth of periodic dips very clearly: 
+
+   </h2>
+
+
+        <h1 class="hd" id="what you need"><b>What you need to know about mountain charts…</b></h1>
+        <h2 class="ss">
+            <p>Charts have been used for a long time to show information visually. William Playfair, a Scottish engineer and economist, is considered the pioneer of using charts for statistics. He created different kinds of charts like line, area, and bar charts in the late 1700s, and later, in 1801, he invented the pie chart and circle graph.<br><br>
+
+Today, investors and traders use five main types of charts to analyze trading data. These include mountain charts, which look like mountains, line charts, which show data points connected by lines, bar charts, which use bars to represent data, candlestick charts, which display trading information with candle shapes, and point-and-figure charts, which use Xs and Os to track price movements.</p>
+
+
+              <img src="C:\Users\LENOVO\Downloads\five-main-types-v-2_0.png"
+            alt="Bar Chart Image">  
+         <br><br><b><i> Uses and types of mountain charts</i></b><br><br>
+         <img src="C:\Users\LENOVO\Downloads\Mountain-chart-1_0.png"
+            alt="Bar Chart Image">
+<br><br>Secondly, mountain charts can be used as a trading instrument chart for price behaviour analysis. Here’s an example showing the fluctuations in Facebook’s share price over the course of a year. It’s interesting how different the visual representation is from the bar chart of volumes underneath.<br><br>
+<img src="C:\Users\LENOVO\Downloads\Picture1_20.png"
+            alt="Bar Chart Image">
+           <br><br> mountain charts can be a useful way to grasp a lot of information over a long period quickly. But they should be viewed carefully as they can give an optical illusion of greater growth than the reality.<br>
+
+<br>Here’s an example of a basic mountain chart:<br><br><br>
+<img src="C:\Users\LENOVO\Downloads\Mountain-chart-2_0 basic.png"
+            alt="Bar Chart Image">
+
+<br><br>Mountain charts display graphically quantitative data. But, as you can see in the example above, if the y-axis (the vertical one) doesn’t start at zero, the chart runs the risk of over-dramatizing peaks and troughs. This is particularly the case if you chose a narrow timeframe to view the chart. A long-term investor might therefore do better to change the parameters to a yearly or even 5-yearly view to gain a better insight into the relevance of day-to-day share price fluctuations.
+
+<br><br>When multiple attributes are included in a mountain chart, the first attribute is plotted by a line with colour fill, followed by the second underneath with a different colour, and then the third and so on. This is known as a stacked mountain chart – or stacked area chart.
+
+<br><br>Here’s an example:<br><br> 
+
+<img src="C:\Users\LENOVO\Downloads\Mountain-chart-3.png"
+            alt="Bar Chart Image">
+
+
+
+           <br><br> This type of stacked mountain chart can be useful for understanding both fluctuations in aggregate values (a company’s total sales over a given period, for example) and the dynamics within an organisation (sales recorded in a company’s various regions or divisions). In the above example, the company’s overall sales end the year very slightly above their January level, but Central’s contribution to the total halved between September and December. This might not have been immediately apparent by simply looking at a table of figures.<br><br>
+
+<i><b>Chart patterns</b></i><br><br>
+
+Knowing how to interpret a chart pattern can be very useful when conducting technical analysis of stocks. Here are some of the chart patterns you’ll most often encounter in mountain charts:<br><br>
+
+
+<span class="bullet">&#8226;</span>The Double Top Reversal. This is a bearish reversal pattern made up of two consecutive peaks that are approximately equal, with a moderate trough between them. A classic Double Top Reversal marks an intermediate change in trend from bullish to bearish.<br><br>
+
+<span class="bullet">&#8226;</span>The Double Bottom Reversal. This is a bullish reversal pattern made up of two consecutive troughs that are roughly equal, with a moderate peak in between. A classic Double Bottom Reversal usually marks an intermediate or long-term change in trend.<br><br>
+
+<span class="bullet">&#8226;</span>The Rounding Bottom. This is a long-term reversal pattern, also also referred to as a saucer bottom. It represents a long consolidation period that turns from a bearish bias to a bullish bias.<br><br>
+
+<span class="bullet">&#8226;</span>The ascending triangle. This is a bullish formation that usually forms during an uptrend as a continuation pattern. Two or more equal highs form a horizontal line at the top, and two or more rising troughs form an ascending trend line that converges on the horizontal line as it rises.<br><br>
+
+<span class="bullet">&#8226;</span>The Bearish Measured Move. This pattern consists of a reversal decline, consolidation/retracement and continuation decline. Because a Bearish Measured Move can’t be confirmed until after the consolidation/retracement period, it’s categorised as a continuation pattern. The pattern usually forms over several months.<br><br>
+
+<b><i>Disadvantages of mountain charts</i></b><br><br>
+
+
+Mountain charts sometimes use a logarithmic scale, meaning that the y-axis (the vertical one) shows exponential growth rather than arithmetic growth. So, for example, the tick marks along the y-axis might be set at £10, £100, £1,000, and £10,000 rather than at £1,000, £2,000, £3,000, and £4,000. One result of using this kind of scale is that it makes bear markets look less daunting than they really are.<br><br>
+
+
+Another issue is that if the graph is plotted with currency, such as the pound, rather than a percentage, it will look like it has a steeper angle of growth than it really does. This is because of compound interest, which is a strong benefit to any long-term investor. Compound interest is essentially interest on top of interest, which, although it looks impressive, isn't an indicator of performance.<br><br>
+
+
+Like all historical data for any fund, mountain charts will only give you information on past performance, which is no indicator of future success. Moreover, mountain charts omit significant data of importance because you can’t view the range of prices each day, and you can’t identify gaps or spikes. Because of this, many traders don’t find mountain charts useful for trading, but they are certainly considered helpful for general price representations in reports.<br>
+
+
+
+
+</h2>
+        <h1 class="hd" id="find out more"><b>Conclusion</b></h1>
+        <h2 class="ss"> 
+               
+In conclusion, the mountain chart effectively visualizes the progression and trends of the variable under consideration over the specified time period or categories. By depicting the cumulative effect, it provides a clear understanding of how the variable has evolved and fluctuated. Through careful analysis of the chart, we can identify key patterns, such as periods of growth, decline, or stability. Additionally, the mountain chart allows for easy comparison between different categories or segments, enabling stakeholders to make informed decisions based on the insights gained. Overall, the mountain chart serves as a valuable tool for data visualization, aiding in the interpretation and communication of trends and patterns within the dataset.<br><br>
+        </h2>
+        
+        <h1 class="hd" id="faqs"><b>FAQs</b></h1>
+        <button class="accordion"><b>What is a mountain chart in trading?</b></button>
+        <div class="panel">
+            <p>In trading, a mountain chart, also known as a cumulative volume chart or volume-at-price chart, represents the cumulative volume traded at each price level over a specified period. It visually displays the distribution of trading volume across different price levels.</p>
+        </div>
+
+        <button class="accordion"><b>How is a mountain chart different from other trading charts like candlestick or line charts?</b></button>
+        <div class="panel">
+            <p>Mountain charts focus on volume distribution at various price levels, while candlestick charts show price movement within a specific time period, and line charts connect closing prices over time. Mountain charts provide insight into where significant volumes are transacted, helping traders identify key support and resistance levels.</p>
+        </div>
+
+        <button class="accordion"><b>Disadvantages of Mountain Charts</b></button>
+        <div class="panel">
+            <p>Disadvantages of mountain charts include limited granularity, difficulty in detecting sudden changes, and potential misinterpretation of the filled area's significance.<br></p>
+        </div>
+
+        <button class="accordion"><b>How are mountain charts constructed in trading platforms?</b></button>
+        <div class="panel">
+            <p>Mountain charts are typically available as a charting option in most trading platforms. Traders can select the mountain chart type and specify the desired time frame for analysis. The chart will then display the cumulative volume distribution at different price levels over the selected period.</p>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <div class="table-box">
+        <h1>Table of contents</h1>
+        <h4>
+            <a href="#what-is-mountain-chart">What is a mountain chart?</a><br>
+            <a href="#where have you">Where have you heard about mountain charts?</a><br>
+            <a href="#what you need">What you need to know about mountain charts…</a><br>
+            <a href="#find out more">Conclusion</a><br>
+            <a href="#faqs">FAQs</a>
+        </h4>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            height: 500px;
+        }
+
+        .vertical-line {
+            height: 74%;
+            width: 2.5px;
+            background-color: #C19A6B;
+            margin-left: 30px;
+        }
+
+        .colored-box {
+            background-color: #FFEABB;
+            padding: 10px;
+            height: 350px;
+            width: 300px;
+            flex-grow: 0.9;
+        }
+
+        .colored-box p {
+            margin: 0;
+            text-align: justify;
+            align-self: flex-start;
+            font-family: calibri, sans-serif;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+
+        .bullet {
+            color: black;
+            margin-right: 6px;
+            font-size: 20px;
+        }
+    </style>
+</body>
+
+</html>

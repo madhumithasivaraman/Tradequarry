@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            font-size: 13px;
+            display: flex;
+            align-items: flex-start;
+            font-weight: normal;
+            margin-left: 0px;
+            text-align: justify;
+        }
+
+        .content {
+            flex: 0 0 70%;
+            margin-right: 20px;
+            font-weight: normal;
+            overflow-y: auto; /* Added overflow-y to enable vertical scrolling */
+        }
+
+        .table-box {
+            flex: 0 0 28%;
+            height: 300px; /* Adjusted height to 100% */
+            width: 350px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: white;
+            margin-left: -10px;
+            margin-top: 30px;
+            position: fixed; /* Changed position to fixed */
+            top: 0; /* Aligned to the top */
+            right: 0; /* Aligned to the right */
+            overflow-y: auto; /* Added overflow-y to enable vertical scrolling */
+        }
+
+        .table-box h4 {
+            font-weight: normal;
+            font-family: calibri, sans-serif;
+            margin-left: 20px;
+            margin-top: 20px;
+            color: black;
+            line-height: 2;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .table-box h1 {
+            font-family: calibri, sans-serif;
+            margin-bottom: 30px;
+            border-bottom: 1px solid black;
+            width: 80%;
+            margin-left: 20px;
+            font-size: 25px;
+            text-align: justify;
+        }
+
+        .table-box h4:hover {
+            color: #C19A6B;
+        }
+
+        .content h2 {
+            font-weight: normal;
+            font-family: calibri, sans-serif;
+            font-size: 17px;
+            margin-left: 30px;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            font-family: calibri, sans-serif;
+            margin-left: 30px;
+        }
+
+        .mm h1 {
+            font-size: 5px;
+            font-family: calibri, sans-serif;
+        }
+
+        .content h3 {
+            color: #C19A6B;
+        }
+
+        .content img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 800px;
+            height: 400px;
+        }
+
+        .colour {
+            color: #C19A6B;
+        }
+
+        .hd h1 {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        .anchor-offset {
+            margin-top: -50px;
+            padding-top: 50px;
+        }
+
+        /* Styles for the FAQ accordion */
+        .accordion {
+            background-color: #eee;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            margin: 10px 0;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            font-family: calibri, sans-serif;
+
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: white;
+            border: 1px dashed #FFEABB;
+            margin-left: 0px;
+
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+             margin-left: 0px;
+
+        }
+
+        .panel {
+            font-size: 18px;
+            margin-left: 0px;
+        }
+
+        .active:after {
+            content: "\2212";
+            margin-left: 0px;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-left: 0px; /* Adjust this value to move the box to the right */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Left side content here -->
+        <h1><b>Line Chart</b></h1>
+        <img src="C:\Users\LENOVO\Downloads\1200-600-_-Business-people-entering_leaving-office-building.png"
+            alt="Bar Chart Image">
+        <h1 class="hd" id="what-is-bar-chart"><b>What is Line Chart?</b></h1>
+        <h2 class="ss">A line chart graphically represents an asset's price over time by connecting a series of data points with a line. This is the most basic type of chart used in finance, and it typically only depicts a security's closing prices. Line charts can be used for any time frame but most often have day-to-day price changes.</h2>
+        <h1 class="hd" id="key-highlights"><b>Key Highlights</b><br></h1>
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="colored-box">
+                <p>
+                    <span class="bullet">&#8226;</span>A line chart displays information as a series of data points connected by straight line segments.<br> <br><span
+                        class="bullet">&#8226;</span>A line chart visually represents an asset's price history using a single line.<br> <br><span class="bullet">&#8226;</span>Line charts usually only plot the closing prices, thus reducing noise from less critical times in the trading day, such as the open, high, and low prices.<br> <br><span
+                        class="bullet">&#8226;</span>Line charts can be simplistic and do not fully capture patterns or trends<br> <br>
+                        
+                </p>
+            </div>
+        </div>
+        <h1 class="hd" id="bar-chart-vs-other-charts"><b>Understanding Line Charts</b></h1>
+        <h2 class="ss">
+            A line chart provides traders with a visualization of the price of a security over a given period of time. Because line charts usually only use closing prices, they cut the noise from less critical times in the trading day, such as the open, high, and low prices. Line charts are popular with investors and traders because closing prices are a common snapshot of a security's activity.<br> <br>
+           <img src="C:\Users\LENOVO\Pictures\dotdash_INV_Final_Line_Chart_Jan_2021-01-d2dc4eb9a59c43468e48c03e15501ebe.jpg"
+            alt="Bar Chart Image">
+
+
+
+        </h2>
+        <h1 class="hd" id="bar-charts-in-trading"><b>What Is a Line Chart Used For?</b></h1>
+        <h2 class="ss"> A line chart serves several key purposes in finance and investing, making it essential for analysts, traders, and investors.<br> <br> <span class="bullet">&#8226;</span><b>Identifying trends:</b> Line charts are excellent for identifying and analyzing price trends over time. By connecting data points, typically end-of-period prices, you get a clearer view of how an asset or sector is doing.<br> <br>
+<span class="bullet">&#8226;</span><b>Comparing performance:</b> When several line charts are overlaid, you can compare different assets and economic and financial data far more easily. This is particularly useful for comparing an asset or sector's performance against a benchmark.<br> <br>
+<span class="bullet">&#8226;</span><b>Simplifying complex data:</b> Line charts can help simplify complex data sets, making them more accessible and understandable. Line charts supply a streamlined view by focusing on end-of-period data, filtering out less relevant data.<br> <br>
+<span class="bullet">&#8226;</span><b>Strategic decision-making:</b> A clear visualization of trends aids in making informed investment and business decisions, particularly for long-term planning. Trends identified through line charts can also help assess the risk profile of an investment.<br> <br>
+<span class="bullet">&#8226;</span><b>Historical analysis:</b> Line charts assess historical market moves, distilling how economies, markets, businesses, and assets have reacted to past events, economic and market cycles, or changes in fiscal or monetary policy.<br> <br>
+<span class="bullet">&#8226;</span><b>Communication:</b> Line charts are an effective way to communicate financial data to stakeholders, clients, or team members, especially those who do not have a technical background.<br> <br>
+<span class="bullet">&#8226;</span><b>Technical analysis:</b> While simpler than other charts, line charts are still helpful in identifying key support and resistance levels in price moves and ratio analysis or relative strength.<br> <br>
+            
+        </h2>
+        
+        <h1 class="hd" id="conclusion"><b>Conclusion</b></h1>
+        <h2 class="ss">Line charts offer investors and traders a clear and concise visualization of a security's price movement over a specified period of time. By focusing solely on closing prices, line charts effectively filter out the noise from other less critical points in the trading day, such as open, high, and low prices. This simplification enables market participants to easily identify trends, patterns, and potential price shifts, making line charts a popular choice for analyzing and interpreting market data.</b> <br> <br></h2>
+        <h1 class="hd" id="faqs"><b>FAQs</b></h1>
+        <button class="accordion"><b>What is the purpose of the line chart?</b></button>
+        <div class="panel">
+            <p>A line graph—also known as a line plot or a line chart—is a graph that uses lines to connect individual data points. A line graph displays quantitative values over a specified time interval. In finance, line graphs are commonly used to depict the historical price action of an asset or security.<br></p>
+        </div>
+
+        <button class="accordion"><b>What is the use of line chart in trading?</b></button>
+        <div class="panel">
+            <p>deally, simple line charts are used to track the price trend of a single asset over time. This helps identify general trends and patterns in price changes. For example, you could use one to monitor the trend of the closing price of a stock over a year to assess its performance</p>
+        </div>
+
+        <button class="accordion"><b>Are there any limitations or drawbacks to using line charts?</b></button>
+        <div class="panel">
+            <p>Line charts may oversimplify data and obscure important details compared to more complex chart types like candlestick charts. Additionally, they may not effectively capture intraday volatility or price fluctuations, which could be important for certain trading strategies<br></p>
+        </div>
+
+        <button class="accordion"><b>Are there any specific timeframes that are more suitable for using line charts?</b></button>
+        <div class="panel">
+            <p>Line charts can be used across different timeframes, but they are particularly useful for longer-term analysis, such as weekly or monthly charts, where they can effectively capture overarching trends and patterns.</p>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <div class="table-box">
+        <h1>Table of contents</h1>
+        <h4>
+            <a href="#what-is-bar-chart">What is a Line Chart?</a><br>
+            <a href="#key-highlights">Key Highlights</a><br>
+            <a href="#bar-chart-vs-other-charts">Understanding Line Charts</a><br>
+            <a href="#bar-charts-in-trading">What Is a Line Chart Used For?</a><br>
+            
+            <a href="#conclusion">Conclusion</a><br>
+            <a href="#faqs">FAQs</a>
+        </h4>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            height: 500px;
+        }
+
+        .vertical-line {
+            height: 54%;
+            width: 2.5px;
+            background-color: #C19A6B;
+            margin-left: 30px;
+        }
+
+        .colored-box {
+            background-color: #FFEABB;
+            padding: 10px;
+            height: 250px;
+            width: 300px;
+            flex-grow: 0.9;
+        }
+
+        .colored-box p {
+            margin: 0;
+            text-align: justify;
+            align-self: flex-start;
+            font-family: calibri, sans-serif;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+
+        .bullet {
+            color: black;
+            margin-right: 6px;
+            font-size: 20px;
+        }
+    </style>
+</body>
+
+</html>

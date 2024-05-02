@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            font-size: 13px;
+            display: flex;
+            align-items: flex-start;
+            font-weight: normal;
+            margin-left: 0px;
+            text-align: justify;
+        }
+
+        .content {
+            flex: 0 0 70%;
+            margin-right: 20px;
+            font-weight: normal;
+            overflow-y: auto; /* Added overflow-y to enable vertical scrolling */
+        }
+
+        .table-box {
+            flex: 0 0 28%;
+            height: 390px; /* Adjusted height to 100% */
+            width: 350px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: white;
+            margin-left: -10px;
+            margin-top: 30px;
+            position: fixed; /* Changed position to fixed */
+            top: 0; /* Aligned to the top */
+            right: 0; /* Aligned to the right */
+            overflow-y: auto; /* Added overflow-y to enable vertical scrolling */
+        }
+
+        .table-box h4 {
+            font-weight: normal;
+            font-family: calibri, sans-serif;
+            margin-left: 20px;
+            margin-top: 20px;
+            color: black;
+            line-height: 2;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .table-box h1 {
+            font-family: calibri, sans-serif;
+            margin-bottom: 30px;
+            border-bottom: 1px solid black;
+            width: 80%;
+            margin-left: 20px;
+            font-size: 25px;
+            text-align: justify;
+        }
+
+        .table-box h4:hover {
+            color: #C19A6B;
+        }
+
+        .content h2 {
+            font-weight: normal;
+            font-family: calibri, sans-serif;
+            font-size: 17px;
+            margin-left: 30px;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            font-family: calibri, sans-serif;
+            margin-left: 30px;
+        }
+
+        .mm h1 {
+            font-size: 5px;
+            font-family: calibri, sans-serif;
+        }
+
+        .content h3 {
+            color: #C19A6B;
+        }
+
+        .content img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 800px;
+            height: 400px;
+        }
+
+        .colour {
+            color: #C19A6B;
+        }
+
+        .hd h1 {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        .anchor-offset {
+            margin-top: -50px;
+            padding-top: 50px;
+        }
+
+        /* Styles for the FAQ accordion */
+        .accordion {
+            background-color: #eee;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            margin: 10px 0;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            font-family: calibri, sans-serif;
+
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: white;
+            border: 1px dashed #FFEABB;
+            margin-left: 0px;
+
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+             margin-left: 0px;
+
+        }
+
+        .panel {
+            font-size: 18px;
+            margin-left: 0px;
+        }
+
+        .active:after {
+            content: "\2212";
+            margin-left: 0px;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-left: 0px; /* Adjust this value to move the box to the right */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Left side content here -->
+        <h1><b>Pointer and Figure Charts</b></h1>
+        <img src="C:\Users\LENOVO\Downloads\images (1).jpeg"
+            alt="Bar Chart Image">
+        <h1 class="hd" id="what-is-bar-chart"><b>What Is a Point-and-Figure (P&F) Chart?</b></h1>
+        <h2 class="ss"><br>A point-and-figure chart plots price movements for stocks, bonds, commodities, or futures without taking into consideration the passage of time.<br><br>
+
+Contrary to some other types of charts, like candlesticks, which mark the degree of an asset's movement over set time periods, P&F charts utilize columns consisting of stacked X's or O's, each of which represents a set amount of price movement. The X's illustrate rising prices, while O's represent a falling price.<br><br>
+
+Technical analysts still utilize concepts such as support and resistance, as well as other patterns, when viewing P&F charts. Some argue that support and resistance levels, as well as breakouts, are more clearly defined on a P&F chart since it filters out tiny price movements and is less susceptible to false breakouts.<br><br>
+
+<img src="C:\Users\LENOVO\Downloads\PointAndFigure-5c7ee7adc9e77c0001f57cf3.webp"
+            alt="Bar Chart Image">
+
+
+</h2>
+        <h1 class="hd" id="key-highlights"><b>Key Highlights</b><br></h1>
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="colored-box">
+                <p>
+                    <span class="bullet">&#8226;</span>An X is created when the price moves higher by a set amount, called the box size. An O is created when the price drops the box size amount.<br> <br><span
+                        class="bullet">&#8226;</span>X's and O's stack on top of each other, respectively, and will often form a series of X's or O's.<br> <br><span class="bullet">&#8226;</span>The box size is set based on the asset's price and the investor's preference.<br> <br><span
+                        class="bullet">&#8226;</span>The formation of a new column of X's or O's occurs when the price moves contrary to its current trend, and does so by more than the reversal amount.<br> <br>
+                    
+                </p>
+            </div>
+        </div>
+        
+        <h1 class="hd" id="bar-charts-in-trading"><b>How to Calculate Point-and-Figure (P&F) Charts</b></h1>
+        <h2 class="ss"> Point-and-figure charts don't require calculation, but they do require at least two variables to be set.<br><br>
+
+            One variable is the box size. The box size can be a specific dollar amount, such as $1, a percentage, such as 3% of the current price, or it can be based on average true range (ATR) which means the box size will fluctuate based on volatility.<br><br>
+
+The reversal amount also needs to be set. The reversal amount is typically three times the box size. For example, if the box size is $1, the reversal amount is $3. The reversal can be set at anything the trader desires, such as one times the box size, or 5.5 times the box size.<br><br>
+
+An optional variable is whether to use high and low prices for the underlying asset or to use closing prices. Using high and low prices will mean the creation of more X's and O's, while using only closing prices (less movement being calculated compared to high and lows) will mean fewer X's and O's are created.<br><br>
+            
+        </h2>
+        <h1 class="hd" id="direction-and-range"><b>What Does a Point-and-Figure (P&F) Chart Tell You?</b></h1>
+        <h2 class="ss"> Point-and-figure charts often provide <b>technical analysts</b> with different trade and trend signals, relative to traditional candlestick or bar charts. While some analysts rely more heavily on the point-and-figure charts, others use these charts to confirm signals provided by traditional charts in an effort to avoid false breakouts.<br><br>
+
+The key to point-and-figure charting is the box size, or the amount of price movement that determines whether a new X or O is added to the chart. For example, say the box size is $3. If the last X happened at a price of $15, a new one is added to the current column of X's when the price rises to $18.<br><br>
+
+
+Notably, the line of X's continues in the same column, provided that the price continues to rise and doesn’t breach a predetermined reversal amount, at which point, a new column of O's begins.<br><br>
+
+
+The same is true for a column of O's in a declining market; the column continues until the stock reaches the reversal amount, at which point a new column of X's begins.<br><br>
+
+A reversal occurs when the price is no longer moving enough to put another X or O in the current X or O column, and then the price moves at least three box sizes (if this is the chosen reversal amount) in the opposite direction. When a reversal occurs, several X's or O's will be drawn at the same time. For example, following a price rise or column of X's, if a reversal occurs and the reversal amount is three box sizes, when the reversal occurs three O's will be drawn starting one spot below the highest X.<br><br>
+
+Traders utilize P&F charts in similar ways to other charts. Traders still watch for support and resistance levels. Breakouts can signal major trend changes. Depending on the box size, the columns themselves can represent significant trends, and when the column changes (from O to X, or X to O) that may signal a significant trend reversal or <b> pullback.</b><br><br>
+</h2>
+        <h1 class="hd" id="how-to-use-bar-charts-in-trading-and-investing"><b>Limitations of Using Point-and-Figure (P&F) Charts</b></h1>
+        <h2 class="ss">
+            P&F charts can be slow to react to price changes. A breakout, for example, must move the box amount in order to signal a breakout occurred. This may benefit some traders as it may reduce false breakout signals, but the price has already moved the box amount (or more) beyond the breakout point. For some traders, getting the signal after the price has already moved that much may not be effective.<br><br>
+
+Also, while P&F charts may help reduce the number of false breakouts, false breakouts still occur. What appears to be a breakout may still be reversed a short time later.<br><br>
+
+P&F charts are good at keeping traders in strong trends, as a lot of small counter-trend movements are filtered out. Yet when a reversal occurs it can significantly erase profits or result in big losses. Because the reversal amount is typically so large, if a trader is only using P&F charts they won't see the reversal until the price has moved significantly against them.<br><br>
+
+When using P&F charts, it is recommended to also watch the actual price of the asset so that risk can be monitored in real time. This can be done by monitoring a candlestick or open-high-low-close (OHLC) chart.<br><br>
+        </h2>
+        <h1 class="hd" id="conclusion"><b>Conclusion</b></h1>
+        <h2 class="ss">Point-and-Figure charts provide a simplified yet effective method for analyzing price movements without considering time, highlighting trends through X's for uptrends and O's for downtrends. Technical analysts find clearer support/resistance levels and breakouts with this method due to its filtering of minor price fluctuations, enhancing pattern recognition and trend identification.</h2>
+        <h1 class="hd" id="faqs"><b>FAQs</b></h1>
+        <button class="accordion"><b>How do you Analyse a point and figure chart?</b></button>
+        <div class="panel">
+            <p> <span class="bullet">&#8226;</span>Support levels.<br>
+           <span class="bullet">&#8226;</span>Resistance levels.<br>
+           <span class="bullet">&#8226;</span>Upward trend lines.<br>
+           <span class="bullet">&#8226;</span>Downward trend lines.<br></p>
+        </div>
+
+        <button class="accordion"><b>What is the point and figure chart indicator?</b></button>
+        <div class="panel">
+            <p>Point and figure charts are a way to visualize price movements and trends in an asset without regard to the amount of time that passes. P&F charts utilize columns consisting of stacked Xs or Os, each of which represents a set amount of price movement. The Xs illustrate rising prices, while Os represent a falling price</p>
+        </div>
+
+        <button class="accordion"><b>What is point and figure bullish percent?</b></button>
+        <div class="panel">
+            <p>The Bullish Percent Index (BPI) is a breadth indicator based on the number of stocks on Point & Figure Buy Signals within an index. The BPI helps you understand the internal health of an index by looking at the number of components that are on a bullish or bearish track.<br></p>
+        </div>
+
+        <button class="accordion"><b>What is the difference between point and figure and Renko?</b></button>
+        <div class="panel">
+            <p>Renko charts excel at filtering out market noise and capturing trends, making them ideal for trend-following traders. On the other hand, Point and Figure charts excel at identifying support and resistance levels, making them valuable for traders who focus on price reversals and breakouts.</p>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <div class="table-box">
+        <h1>Table of contents</h1>
+        <h4>
+            <a href="#what-is-bar-chart">What Is a Point-and-Figure (P&F) Chart?</a><br>
+            <a href="#key-highlights">Key Highlights</a><br>
+            
+            <a href="#bar-charts-in-trading">How to Calculate Point-and-Figure (P&F) Charts</a><br>
+            <a href="#direction-and-range">What Does a Point-and-Figure (P&F) Chart Tell You?</a><br>
+            <a href="#how-to-use-bar-charts-in-trading-and-investing">Limitations of Using Point-and-Figure (P&F) Charts</a><br>
+            <a href="#conclusion">Conclusion</a><br>
+            <a href="#faqs">FAQs</a>
+        </h4>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            height: 500px;
+        }
+
+        .vertical-line {
+            height: 62%;
+            width: 2.5px;
+            background-color: #C19A6B;
+            margin-left: 30px;
+        }
+
+        .colored-box {
+            background-color: #FFEABB;
+            padding: 10px;
+            height: 290px;
+            width: 300px;
+            flex-grow: 0.9;
+
+        }
+
+        .colored-box p {
+            margin: 0;
+            text-align: justify;
+            align-self: flex-start;
+            font-family: calibri, sans-serif;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+
+        .bullet {
+            color: black;
+            margin-right: 6px;
+            font-size: 20px;
+        }
+    </style>
+</body>
+
+</html>

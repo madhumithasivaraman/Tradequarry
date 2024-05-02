@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            font-size: 13px;
+            display: flex;
+            align-items: flex-start;
+            font-weight: normal;
+            margin-left: 0px;
+            text-align: justify;
+        }
+
+        .content {
+            flex: 0 0 70%;
+            margin-right: 20px;
+            font-weight: normal;
+            overflow-y: auto; /* Added overflow-y to enable vertical scrolling */
+        }
+
+        .table-box {
+            flex: 0 0 28%;
+            height: 390px; /* Adjusted height to 100% */
+            width: 350px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: white;
+            margin-left: -10px;
+            margin-top: 30px;
+            position: fixed; /* Changed position to fixed */
+            top: 0; /* Aligned to the top */
+            right: 0; /* Aligned to the right */
+            overflow-y: auto; /* Added overflow-y to enable vertical scrolling */
+        }
+
+        .table-box h4 {
+            font-weight: normal;
+            font-family: calibri, sans-serif;
+            margin-left: 20px;
+            margin-top: 20px;
+            color: black;
+            line-height: 2;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .table-box h1 {
+            font-family: calibri, sans-serif;
+            margin-bottom: 30px;
+            border-bottom: 1px solid black;
+            width: 80%;
+            margin-left: 20px;
+            font-size: 25px;
+            text-align: justify;
+        }
+
+        .table-box h4:hover {
+            color: #C19A6B;
+        }
+
+        .content h2 {
+            font-weight: normal;
+            font-family: calibri, sans-serif;
+            font-size: 17px;
+            margin-left: 30px;
+        }
+
+        .content h1 {
+            font-size: 50px;
+            font-family: calibri, sans-serif;
+            margin-left: 30px;
+        }
+
+        .mm h1 {
+            font-size: 5px;
+            font-family: calibri, sans-serif;
+        }
+
+        .content h3 {
+            color: #C19A6B;
+            font-size: 35px;
+             margin-left: 30px;
+        }
+
+        .content img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 700px;
+            height: 350px;
+        }
+        .sss h3{
+            font-size: 30px;
+
+        }
+        
+
+        .content img:nth-of-type(2),
+.content img:nth-of-type(3) {
+    width: 400px; /* Set the desired width */
+    height: 50%; /* Automatically adjust height to maintain aspect ratio */
+}
+
+        .colour {
+            color: #C19A6B;
+        }
+
+        .hd h1 {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        .anchor-offset {
+            margin-top: -50px;
+            padding-top: 50px;
+        }
+
+        /* Styles for the FAQ accordion */
+        .accordion {
+            background-color: #eee;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            margin: 10px 0;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            font-family: calibri, sans-serif;
+
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: white;
+            border: 1px dashed #FFEABB;
+            margin-left: 0px;
+
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+             margin-left: 0px;
+
+        }
+
+        .panel {
+            font-size: 18px;
+            margin-left: 0px;
+        }
+
+        .active:after {
+            content: "\2212";
+            margin-left: 0px;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-left: 0px; /* Adjust this value to move the box to the right */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Left side content here -->
+        <h1><b>Candlestick Chart</b></h1>
+        <img src="C:\Users\LENOVO\Downloads\candlestick chart.png"
+            alt="Bar Chart Image">
+        <h1 class="hd" id="what-is-bar-chart"><b>What is Candlestick Chart?</b></h1>
+        <h2 class="ss">A <b>candlestick chart</b> is a candle-shaped chart showing the changing prices of a <b>security</b>. It usually shows the opening price, closing price, and highest and lowest prices over a period of time.</h2>
+        <h1 class="hd" id="key-highlights"><b>Key Highlights</b><br></h1>
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="colored-box">
+                <p>
+                    <span class="bullet">&#8226;</span>Candlestick charts are composed of candlesticks that depict the price movements of a financial asset.<br> <br><span
+                        class="bullet">&#8226;</span>Each candlestick comprises a body, upper shadow, and lower shadow, and its color may indicate either a rise (green or blue) or a fall (red) in prices.<br> <br><span class="bullet">&#8226;</span>Individual candlesticks represent specific time intervals, such as a day, a week, or a minute, depending on the chosen trading timeframe.<br> <br><span
+                        class="bullet">&#8226;</span>Traders can observe the opening and closing prices, as well as the highest and lowest points reached during the period, within a single candlestick.<br> <br><span
+                        class="bullet">&#8226;</span>Frequently encountered candlestick patterns include the doji, spinning top, hammer, hanging man, and various others.<br> <br>
+                </p>
+            </div>
+        </div>
+        <h1 class="hd" id="bar-chart-vs-other-charts"><b>Understanding candlestick charts</b></h1>
+        <h2 class="ss">
+            There are essential elements of a candlestick that traders should understand when analyzing candlestick charts:<br><br>
+
+<b>Body:</b> This refers to the central, thicker portion of the candlestick and indicates the disparity between the opening and closing prices throughout the trading session.<br><br>
+
+<b>Upper Wick or Shadow:</b> This is the line extending above the body and represents the highest price level reached during the trading session.<br><br>
+
+<b>Lower Wick or Shadow:</b> This extends below the body and signifies the lowest price point recorded during the trading session.<br><br>
+
+<b>Color:</b> The color of a candlestick is significant as it indicates whether the price trended upwards or downwards. Traditionally, green or blue hues represent price increases, with the opening price typically depicted at the bottom and the closing price at the top. Conversely, red candlesticks depict declining prices, typically with the opening price positioned at the top and the closing price at the bottom.<br><br>
+
+<img src="C:\Users\LENOVO\Downloads\Candlestick-patterns_MCT-8837_EN_8.png"
+            alt="Bar Chart Image">
+
+
+</h2>
+        <h1 class="hd" id="bar-charts-in-trading"><b>How to read candlesticks explained</b></h1>
+        <h2 class="ss"> Candlestick charts or candle charts are a useful trading tool as each candlestick can reveal four points of data:<br><br>
+
+<b>Open:</b> This is the price that an asset starts a trading session at and is represented by the body’s bottom for the green (or blue) candles, and the body’s top for the red candles.<br><br>
+
+<b>Close:</b>  This is the price where an asset finishes the trading session. It’s represented at the top for green (or blue) candles, and bottom for red.<br><br>
+
+<b>High:</b> The highest price point in a trading session. If a candle stands for a day, this would be called an intraday high.<br><br>
+
+<b>Low:</b> And vice versa, this is the lowest price point in a trading session. For a daily candle, this would be called an intraday low.<br><br> 
+
+Using these data points traders can interpret the price movements quickly and efficiently. They can also search for repetitive candlestick patterns of specific candle shapes and forms such as different lengths of wicks, or bodies, or their proportion to each other.<br> <br>
+          
+        </h2>
+        <h1 class="hd" id="direction-and-range"><b>Candlestick chart patterns</b></h1>
+        <h2 class="ss">  <br>There are various forms and shapes that are used by traders for reading candlestick charts. Generally, these can be grouped into <b>bullish</b> and <b>bearish,</b> with some patterns being able to point to both directions.<br><br> 
+
+<span class="bullet">&#8226;</span><b>Bullish candlestick patterns:</b> Indicate bullish momentum<br><br> 
+
+
+<span class="bullet">&#8226;</span><b>Bearish candlestick patterns:</b> Indicate bearish momentum<br><br> 
+
+
+Some of the common candlestick chart examples include doji candles, a spinning top, a hanging man and a hammer. But there are many more.
+<h3 class="sss"> <b>Doji</b></h3>
+<h2 class="ss">
+<br>A doji candle pattern has open and closing prices of the same level, meaning that even if  significant market fluctuations happened during a session, the price level returned to its original point. This candlestick pattern represents indecision.
+
+There are three types of doji distinguished by traders:<br><br>
+
+<span class="bullet">&#8226;</span><b>Common doji:</b>  a doji with equal wicks<br><br>
+
+<span class="bullet">&#8226;</span><b>Long-legged doji:</b> a doji with a long bottom wick, but short top wick.<br><br>
+
+<span class="bullet">&#8226;</span><b>Gravestone doji:</b> a doji with a long head, but no tail.<br><br>
+
+<span class="bullet">&#8226;</span><b>Dragonfly doji:</b> A doji with a long tail, but no head.<br><br>
+
+
+<img src="C:\Users\LENOVO\Downloads\Candlestick-chart_MCT-8822_EN_2-1-.png"
+            alt="Bar Chart Image">
+
+<h3 class="sss"> <b>Spinning top</b></h3><br>
+<h2 class="ss">A spinning top has a small body positioned in between longer upper and lower tails. Just like a doji candle, a spinning top represents indecision in the markets. The size of the short body means that the difference between open and close is relatively small. The long upper tail would suggest that while price soared, buyers could not maintain the bullish momentum.<br><br>
+
+<img src="C:\Users\LENOVO\Downloads\Candlestick-chart_MCT-8822_EN-1-.png"
+            alt="Bar Chart Image">
+
+ <h3 class="sss"> <b>Hanging man</b></h3><br>
+ <h2 class="ss">This is a bearish reversal pattern, which signals that the prices may start falling after an uptrend. A hanging man has a small body yet long tail, indicating that the bottom price point was much lower than where the price has opened and closed. It typically means that the bullish momentum is winding down. <br><br>
+
+    <img src="C:\Users\LENOVO\Downloads\Candlestick-patterns_MCT-8829_EN_6.png"
+            alt="Bar Chart Image">
+
+
+
+<h3 class="sss"> <b>Hammer</b></h3><br>
+<h2 class="ss">A hammer candlestick is exactly what it sounds like: a hammer. It has a relatively small body, and a lower tail that’s at least twice longer. It occurs after a downtrend and is typically seen as a bullish reversal signal, indicating that buyers absorb selling pressure.<br><br>
+
+<img src="C:\Users\LENOVO\Downloads\Candlestick-patterns_MCT-8829_EN_5.png"
+            alt="Bar Chart Image">
+
+
+
+</h2>
+        <h1 class="hd" id="how-to-use-bar-charts-in-trading-and-investing"><b>Why use candlestick charts?
+</b></h1>
+        <h2 class="ss">
+          <span class="bullet">&#8226;</span><b>State of the market at a glance:</b> Candlestick charts provide a visual representation of price dynamics that’s effective and quick to grasp.<br><br>
+
+<span class="bullet">&#8226;</span><b>Reveal patterns:</b> Candlestick charts can reveal patterns of how an asset’s price has behaved over time.<br><br>
+
+<span class="bullet">&#8226;</span><b>Supported by most trading platforms:</b> They are available on most trading platforms with indicators and tools already embedded in the interface.<br><br>
+
+
+        </h2>
+
+
+ <h1 class="hd" id="Limitations of candlestick charts"><b>Limitations of candlestick charts</b></h1>
+    <h2 class="ss">
+
+<span class="bullet">&#8226;</span><b>Patterns depend on a time-frame:</b> Candlestick patterns would change depending on a time period one candle represents, which is changed manually by a trader. This can provide additional challenges in spotting patterns. <br><br>
+
+<span class="bullet">&#8226;</span><b>Lagging indicator:</b> Candlestick chart patterns reveal how the price behaved in the past, and past performance is not a reliable indicator of future returns.<br><br>
+
+<span class="bullet">&#8226;</span><b>Doesn’t reveal long-term trend:</b> Candlestick charts provide a state of current market environment, but doesn’t reveal a long-term trend on its own.<br><br> 
+
+
+
+    </h2>
+
+        <h1 class="hd" id="conclusion"><b>Conclusion</b></h1>
+        <h2 class="ss"> <br>Candlestick charts serve as visual aids for traders to assess the prevailing market conditions. They offer an effective means to track price movements and recognize recurring formations.<br><br>
+
+Each candlestick comprises a body, along with upper and lower wicks, denoting opening and closing prices, as well as the highest and lowest points within a specified time frame, which can range from minutes to days.<br><br>
+
+These candlesticks can appear in either green (or blue) or red, symbolizing bullish or bearish sentiment respectively. They encapsulate a designated period, such as a day, week, or minute, depending on the chosen chart setup.<br><br>
+
+Traders leverage candlestick chart patterns to discern recognizable trends in asset prices, although it's crucial to note that these patterns do not guarantee future returns. Commonly observed patterns include doji candles, spinning tops, hanging man, and hammer formations, among others.<br><br>
+
+Candlestick charts afford traders a rapid overview of market dynamics, aiding in the identification of patterns, and are widely supported by various trading platforms. However, it's essential to acknowledge that these patterns may shift with changes in the chosen timeframe. Moreover, they serve as lagging indicators and may not reliably forecast long-term trends.<br><br>
+
+</h2>
+        <h1 class="hd" id="faqs"><b>FAQs</b></h1>
+        <button class="accordion"><b>What are Candlesticks used for?</b></button>
+        <div class="panel">
+            <p>Candlestick charts are used in trading to identify patterns, signals, reversals and the overall market momentum. Traders use them to guide decision-making.<br><br></p>
+        </div>
+
+        <button class="accordion"><b>What are candlestick chart in simple terms?</b></button>
+        <div class="panel">
+            <p>A candlestick chart is a candle-shaped chart showing the changing prices of a <b>security.</b></p>
+        </div>
+
+        <button class="accordion"><b>How do you analyse a candlestick chart?</b></button>
+        <div class="panel">
+            <p>Candlestick charts are a useful trading tool as each candlestick can reveal four points of data: open, close, highest and lowest price points. Using these data points traders can interpret the price movements quickly and efficiently. They can also search for repetitive candlestick patterns of specific candle shapes and forms such as different lengths of wicks, or bodies, or their proportion to each other.<br></p>
+        </div>
+
+        <button class="accordion"><b>How do you know if the chart is bullish or bearish?</b></button>
+        <div class="panel">
+            <p>There are bullish and bearish candlestick chart patterns traders can search for to identify whether a chart is bullish or bearish. Traders should familiarise themselves with these patterns to be able to use them.</p>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <div class="table-box">
+        <h1>Table of contents</h1>
+        <h4>
+            <a href="#what-is-bar-chart">What is a Candlestick Chart?</a><br>
+            <a href="#key-highlights">Key Highlights</a><br>
+            <a href="#bar-chart-vs-other-charts">Understanding candlestick charts</a><br>
+            <a href="#bar-charts-in-trading">How to read candlesticks explained</a><br>
+            <a href="#direction-and-range">Why use candlestick charts?
+</a><br>
+            <a href="#how-to-use-bar-charts-in-trading-and-investing">How to use bar charts in trading and investing</a><br>
+            <a href="#conclusion">Conclusion</a><br>
+            <a href="#faqs">FAQs</a>
+        </h4>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            height: 500px;
+        }
+
+        .vertical-line {
+            height: 82%;
+            width: 2.5px;
+            background-color: #C19A6B;
+            margin-left: 30px;
+        }
+
+        .colored-box {
+            background-color: #FFEABB;
+            padding: 10px;
+            height: 390px;
+            width: 300px;
+            flex-grow: 0.9;
+        }
+
+        .colored-box p {
+            margin: 0;
+            text-align: justify;
+            align-self: flex-start;
+            font-family: calibri, sans-serif;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+
+        .bullet {
+            color: black;
+            margin-right: 6px;
+            font-size: 20px;
+        }
+    </style>
+</body>
+
+</html>
